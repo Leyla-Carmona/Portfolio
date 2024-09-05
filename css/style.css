@@ -135,6 +135,7 @@ header .main-nav a {
   position: relative;
 }
 .section2 .projects .body-projects .projects-tab .projects-tab figcaption {
+  margin-left: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
   color: white;
