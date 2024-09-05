@@ -35,48 +35,117 @@ ul li {
   margin-top: -15px;
 }
 
-p {
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  font-family: "monserrat";
-  z-index: 1;
-  font-size: 1.3rem;
-  font-weight: bold;
+/*Mobile*/
+@media (min-width: 320px) {
+  p {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: "monserrat";
+    z-index: 1;
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  a {
+    position: relative;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 10px;
+    padding-top: 20px;
+    padding-left: 10px;
+  }
+  header {
+    background-color: #BFB1B1;
+    width: 100%;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 135px;
+    z-index: 0;
+  }
+  header .main-nav {
+    display: inline-block;
+  }
+  header .main-nav .main-nav a {
+    text-decoration: none;
+    color: black;
+    font-family: "poppins";
+    font-size: 12px;
+    font-weight: bolder;
+    font-style: italic;
+    letter-spacing: 4%;
+  }
 }
-
-a {
-  position: relative;
-  text-decoration: none;
-  font-weight: bold;
-  color: black;
-  font-size: 10px;
-  padding-top: 20px;
-  padding-left: 10px;
+/*tablets*/
+@media (min-width: 768px) {
+  body {
+    font-size: 2.5rem;
+  }
+  p {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: "monserrat";
+    z-index: 1;
+    font-size: 1.37rem;
+    font-weight: bold;
+  }
+  a {
+    position: relative;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 15px;
+    padding-top: 20px;
+    padding-left: 10px;
+  }
+  header {
+    background-color: #BFB1B1;
+    width: 100%;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 135px;
+    z-index: 0;
+  }
+  header .main-nav {
+    display: inline-block;
+  }
+  header .main-nav .main-nav a {
+    text-decoration: none;
+    color: black;
+    font-family: "poppins";
+    font-size: 20px;
+    font-weight: bolder;
+    font-style: italic;
+    letter-spacing: 4%;
+  }
 }
-
-header {
-  background-color: #BFB1B1;
-  width: 100%;
-  padding-top: 5px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 135px;
-  z-index: 0;
+/*Desktop*/
+@media (min-width: 1024px) {
+  body {
+    font-size: 3rem;
+  }
+  p {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: "monserrat";
+    z-index: 1;
+    font-size: 1.37rem;
+    font-weight: bold;
+  }
+  a {
+    position: relative;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 10px;
+  }
 }
-header .main-nav {
-  display: inline-block;
-}
-header .main-nav a {
-  text-decoration: none;
-  color: black;
-  font-family: "poppins";
-  font-size: 12px;
-  font-weight: bolder;
-  font-style: italic;
-  letter-spacing: 4%;
-}
-
 .section1 {
   box-shadow: -2px 10px 9px 0 rgba(0, 0, 0, 0.747);
 }
@@ -138,7 +207,6 @@ header .main-nav a {
   margin-left: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
-  color: white;
   font-size: 16px;
   text-align: center;
   opacity: 0;
@@ -168,7 +236,8 @@ header .main-nav a {
 .section3 .contact footer form {
   margin-left: 25px;
 }
-.section3 .contact footer form input, .section3 .contact footer form textarea {
+.section3 .contact footer form input,
+.section3 .contact footer form textarea {
   width: 95%;
 }
 .section3 .contact footer form #button {
@@ -176,10 +245,10 @@ header .main-nav a {
   color: white;
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
-  width: 75%;
+  width: 95%;
   height: 55px;
   left: 55%;
-  margin: 20px;
+  margin-bottom: 20px;
 }
 .section3 .contact footer form #button:hover {
   background-color: #4caf50;
