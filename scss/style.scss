@@ -23,7 +23,22 @@ h1 {
     padding-top: 20px;
     padding-left: 20px;
 }
+h2{
+    font-family: 'Times New Roman', Times, serif;
+}
 
+h3{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-left: 25px;
+}
+
+ul{
+    margin-left: 60px;
+
+    li{
+        margin-top: -15px;
+    }
+}
 p {
     padding-top: 20px;
     padding-left: 20px;
@@ -128,10 +143,10 @@ header {
 
             .projects-tab {
                 width: 250px;
-                height: 200px;
+                height: auto;
                 margin: 20px;
                 position: relative;
-
+                
                 .projects-tab figcaption {
                     position: absolute;
                     transform: translate(-50%, -50%);
