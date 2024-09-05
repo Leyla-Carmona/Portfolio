@@ -1,0 +1,347 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;    
+    background-image: url("https://www.colorhexa.com/dad7ce.png");
+    background-position: right;
+    width: 100%;
+    z-index: 9;
+}
+
+header {
+    background-color: rgba(80, 75, 69, 0.418);
+    position: fixed;
+    width: 100%;
+    height: 20px;
+    z-index: 3;
+}
+
+.proyects a{    
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.proyects a:hover{    
+    color: red;
+    cursor: pointer
+}
+
+#presentation {
+    background: linear-gradient(to right, rgb(160, 98, 18), rgba(255, 255, 255, 0));
+    opacity: 5;
+    width: 100%;
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 2rem;
+}
+
+.presentation a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-shadow: black;
+    margin-left: 10px;
+    font-size: 1.375rem;
+}
+
+.presentation p {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    text-shadow: black;
+    font-size: 1rem;
+    text-align: justify;
+    padding: 1.55rem;
+
+}
+
+.presentation h6 {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    text-shadow: black;
+    margin-left: 45px;
+    font-size: 1.375rem;
+}
+
+#title {
+    margin-left: 3rem;
+    text-align: left;
+    font-family: Arial Black;
+    font-weight: bold;
+    color: rgb(143, 103, 30);
+    text-shadow: 0 0.0625rem 0 rgb(112, 81, 24),
+        0 0.125rem 0 rgb(63, 47, 17),
+        0 0.1875rem 0 rgb(43, 29, 4),
+        0 0.25rem 0 rgb(66, 59, 44),
+        0 0.3125rem 0 rgb(34, 24, 5),
+        0 0.375rem 0.0625rem rgba(0, 0, 0, .1),
+        0 0 0.3125rem rgba(0, 0, 0, .1),
+        0 0.0625rem 0.1875rem rgba(0, 0, 0, .3),
+        0 0.1875rem 0.3125rem rgba(0, 0, 0, .2),
+        0 0.3125rem 0.625rem rgba(0, 0, 0, .25),
+        0 0.625rem 0.625rem rgba(0, 0, 0, .2),
+        0 1.25rem 1.25rem rgba(0, 0, 0, .15);
+    font-size: 3rem;
+}
+
+#socialnetwork {
+    width: 3.438rem;
+    height: auto;
+    border-radius: 25px;
+    display: inline;
+    margin-bottom: 10px;
+}
+
+#logo {
+    width: 100px;
+    height: auto;
+    display: inline;
+}
+
+div {
+    background-color: rgba(223, 134, 25, 0.281);
+}
+
+.div a:hover {
+    color: red;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#email {
+    border: none;
+    color: black;
+    padding: 14px 28px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #866232;
+    transition: transform 0.3s ease-in-out;
+}
+
+#email:hover {
+    background-color: #773b68;
+}
+
+#email:active {
+    transform: scale(0.9);
+}
+
+/*Telefono*/
+@media (min-width:320px) {
+    .carousel figure {
+        height: 28rem;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .carousel img {
+        height: 25rem;
+        width: 95%;
+    }
+
+    .carousel-item {
+        height: 28rem;
+    }
+
+    #fotodeperfil {
+        width: 22rem;
+        height: auto;
+        border-color: black;
+        border: solid;
+        border-width: 2px;
+        border-radius: 400px;
+        margin-right: 2rem;
+        margin-left: 5rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .presentation H1 {
+        animation: backwards;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .presentation h2 {
+        text-align: center;
+    }
+
+    .main-nav {
+        list-style: none;
+        display: inline-block;
+    }
+    
+    .main-nav a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        text-shadow: black;
+        font-size: 0.70rem;        
+    }
+    
+    .main-nav a:hover{
+        color: red;
+        cursor: pointer
+    }
+
+}
+/*Large devices*/
+@media (min-width:425px) {
+    .carousel figure {
+        height: 35rem;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .carousel img {
+        height: 32rem;
+        width: auto;
+    }
+
+    .carousel-item {
+        height: 35rem;
+    }
+
+    #fotodeperfil {
+        width: 22rem;
+        height: auto;
+        border-color: black;
+        border: solid;
+        border-width: 2px;
+        border-radius: 400px;
+        margin-right: 2rem;
+        margin-left: 5rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .presentation H1 {
+        animation: backwards;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .presentation h2 {
+        text-align: center;
+    }
+
+    .main-nav {
+        list-style: none;
+        display: inline-block;
+    }
+    
+    .main-nav a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        text-shadow: black;
+        font-size: 1rem;
+    }
+    
+    .main-nav a:hover{
+        color: red;
+        cursor: pointer
+    }
+}
+/*Large device*/
+@media (min-width:760px) {
+    .carousel figure {
+        height: 40rem;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .carousel img {
+        height: 37rem;
+        width: auto;
+    }
+
+    .carousel-item {
+        height: 40rem;
+    }
+
+    #fotodeperfil {
+        width: 22rem;
+        height: auto;
+        border-color: black;
+        border: solid;
+        border-width: 2px;
+        border-radius: 400px;
+        float: left;
+        margin-right: 2rem;
+        margin-left: 5rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .presentation H1 {
+        animation: backwards;
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    .presentation h2 {
+        text-align: left;
+    }
+
+    .main-nav {
+        list-style: none;
+        display: inline-block;
+    }
+    
+    .main-nav a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        text-shadow: black;
+        font-size: 1.5rem;   
+    }
+    
+    .main-nav a:hover{
+        color: red;
+        cursor: pointer
+    }
+
+    header{
+        margin-top: -5px;
+    }
+
+    p{
+        font-size: 1.5rem;
+    }
+    
+}
+
+.container {
+    border: 0.3rem solid black;
+    display: flex;
+    flex-wrap: wrap;    
+    background-color: rgba(151, 101, 44, 0.603);  
+    font-size: 1.8rem;
+}
+
+.box {
+    height: auto;
+    flex-basis: 10rem;
+    flex-grow: 1;
+    padding: 5px;
+}
+
+.box img {
+    height: 7rem;
+    flex-basis: 7rem;
+    opacity: 0.9;
+}

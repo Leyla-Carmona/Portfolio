@@ -1,0 +1,196 @@
+$primarycolor: #BFB1B1;
+$secondarycolor: #D9D9D9;
+$textnav: 'poppins';
+$textp: 'monserrat';
+$shadow: -2px 10px 9px 0 rgba(0, 0, 0, 0.747);
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+h1 {
+    font-family: 'sahitya';
+    font-weight: bolder;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+p {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: $tetp;
+    z-index: 1;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 10px;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+header {
+    background-color: $primarycolor;
+    width: 100%;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 135px;
+    z-index: 0;
+
+    .main-nav {
+        display: inline-block;
+    }
+
+    .main-nav a {
+        text-decoration: none;
+        color: black;
+        font-family: $textnav;
+        font-size: 12px;
+        font-weight: bolder;
+        font-style: italic;
+        letter-spacing: 4%;
+    }
+}
+
+.section1 {
+    box-shadow: $shadow;
+    .aboutme {
+        background-color: $secondarycolor;
+        width: 100%;
+        height: auto;
+
+        .header-aboutme {
+            position: absolute;
+            left: 75%;
+            top: 10%;
+            transform: translateX(-50%);
+            z-index: 1;
+
+            .profile-image {
+                width: 140px;
+                height: auto;
+                border-radius: 50%;
+                border: solid 2px black;
+                box-shadow: $shadow;
+                margin-bottom: 25px;
+            }
+        }
+
+
+        .footer-aboutme {
+            padding-top: 12px;
+            padding-bottom: 5px;
+            padding-left: 10%;
+            padding-right: 2px;
+            background-color: $secondarycolor;
+
+
+            img {
+                width: 15px;
+                height: auto;
+                border-radius: 2px;
+                display: inline;
+                margin-top: 2px;
+                box-shadow:$shadow;
+            }
+        }
+    }
+}
+
+.section2 {
+    .projects {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .body-projects {
+            margin-right: 5%;
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            .projects-tab {
+                width: 250px;
+                height: 200px;
+                margin: 20px;
+                position: relative;
+
+                .projects-tab figcaption {
+                    position: absolute;
+                    transform: translate(-50%, -50%);
+                    color: white;
+                    font-size: 16px;
+                    text-align: center;
+                    opacity: 0;
+                    transition: opacity 0.5s ease;
+                }
+
+                .projects-tab img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: transform 0.5s ease, filter 0.5s ease;
+                    border: black solid 2px;
+                }
+
+                .projects-tab:hover img {
+                    transform: scale(1.1);
+                    filter: opacity(0.5) blur(5px);
+                }
+
+                .projects-tab:hover figcaption {
+                    margin-left: 50%;
+                    opacity: 1;
+                    color: black;
+                }
+
+            }
+        }
+    }
+}
+
+.section3 {
+    .contact {
+        footer {
+            border: black solid 2px;
+            background-color: $secondarycolor;
+
+            form {
+                margin-left: 25px;
+
+                #button {
+                    background-color: black;
+                    color: white;
+                    -webkit-transition-duration: 0.4s;
+                    transition-duration: 0.4s;
+                    width: 75%;
+                    height: 55px;
+                    left: 55%;
+                    margin: 20px;
+                }
+
+                #button:hover {
+                    background-color: #4caf50;
+                    color: white;
+                }
+            }
+        }
+    }
+}
