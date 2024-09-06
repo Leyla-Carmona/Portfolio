@@ -42,6 +42,11 @@ ul {
     }
 }
 
+Select{
+    @extend a;
+    border: none;
+    background-color: transparent;
+}
 /*Mobile*/
 @media (min-width: 320px) {
 

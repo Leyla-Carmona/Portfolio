@@ -8,6 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="javascript.js"></script>
     <title>Leyla Carmona Portfolio</title>
 </head>
 <header>
@@ -16,6 +17,11 @@
             <li class="main-nav"><a href="#section1">About me</a></li>
             <li class="main-nav">|<a href="#section2">Projects</a></li>
             <li class="main-nav">|<a href="#section3">Contact me</a></li>
+            <li class="main-nav">|<a>Language:</a>
+                <Select id="languages" onchange="navigateToPage()">
+                <option value="index.html">English</option>
+                <option value="index_spanish.html">Spanish</option>
+            </Select></a></li>
         </ul>
     </nav>
 </header>
@@ -45,8 +51,9 @@
                         alt="linkdnlogo"> Linkdn Profile</a>
                 <a href="https://github.com/Leyla-Carmona"> <img id="socialnetwork" src="img/githublogo.png"
                         alt="githublogo"> GitHub Pofile</a>
-                <a href="document/Programming_CV_LeylaCarmona.pdf" download="CV_2024"> <img src="img/cvlogo.png"
+                <a href="document/Programming_CV_LeylaCarmona.pdf" download="Leyla_Carmona_CurriculumVitae_English"> <img src="img/cvlogo.png"
                         alt="cv" id="socialnetwork">Download CV</a>
+                        
             </div>
         </div>
     </section>
@@ -84,7 +91,7 @@
                             </p>
                         </figcaption>
                         <br>
-                        <h1>Portafolio - Version 2 (This page) </h1> 
+                        <h1>Portafolio - Version 2 <h1 style="font-size: smaller;">(This page)</h1> </h1> 
                         <h3>Technologies:</h3>
                         <ul>
                             <li><p>HTML</p></li>
@@ -162,7 +169,8 @@
                         <li><p> Colour psychology for UX development</p></li>
                     </ul> <br>
                     <h3> Challenges:</h3>
-                    <p>I have included my CV on this page for easy download, but I aimed to create a more visually appealing presentation of my qualifications. The primary challenge was to organize the CV information in a way that is both engaging and informative. To achieve this, I employed neutral colors based on color psychology principles and carefully structured the content to enhance readability and visual appeal. This approach ensures that users find the information both accessible and visually pleasing.</p>
+                    <p>I have included my CV on this page for easy download, but I 
+                        aimed to create a more visually appealing presentation of my qualifications. The primary challenge was to organize the CV information in a way that is both engaging and informative. To achieve this, I employed neutral colors based on color psychology principles and carefully structured the content to enhance readability and visual appeal. This approach ensures that users find the information both accessible and visually pleasing.</p>
                 </figure>
                 </div>
             </div>
@@ -180,7 +188,7 @@
                 <input type="text" id="name" name="name" required placeholder="Your name / Required"><br>
 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required placeholder="Your email / Required"><br>
+                <input type="email" id="email" name="email" required placeholder="youremail@example.com / Required"><br>
 
                 <label for="subject">Subject:</label>
                 <input type="text" id="subject" name="subject" required placeholder="Required"><br>

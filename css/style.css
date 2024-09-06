@@ -35,6 +35,11 @@ ul li {
   margin-top: -15px;
 }
 
+Select {
+  border: none;
+  background-color: transparent;
+}
+
 /*Mobile*/
 @media (min-width: 320px) {
   p {
@@ -46,7 +51,7 @@ ul li {
     font-size: 1.3rem;
     font-weight: bold;
   }
-  a {
+  a, Select {
     position: relative;
     text-decoration: none;
     font-weight: bold;
@@ -67,7 +72,7 @@ ul li {
   header .main-nav {
     display: inline-block;
   }
-  header .main-nav .main-nav a {
+  header .main-nav .main-nav a, header .main-nav .main-nav Select {
     text-decoration: none;
     color: black;
     font-family: "poppins";
@@ -91,7 +96,7 @@ ul li {
     font-size: 1.37rem;
     font-weight: bold;
   }
-  a {
+  a, Select {
     position: relative;
     text-decoration: none;
     font-weight: bold;
@@ -112,7 +117,7 @@ ul li {
   header .main-nav {
     display: inline-block;
   }
-  header .main-nav .main-nav a {
+  header .main-nav .main-nav a, header .main-nav .main-nav Select {
     text-decoration: none;
     color: black;
     font-family: "poppins";
@@ -136,7 +141,7 @@ ul li {
     font-size: 1.37rem;
     font-weight: bold;
   }
-  a {
+  a, Select {
     position: relative;
     text-decoration: none;
     font-weight: bold;
