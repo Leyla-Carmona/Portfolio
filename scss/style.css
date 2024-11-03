@@ -185,6 +185,9 @@ Select {
     box-shadow: -2px 10px 9px 0 rgba(0, 0, 0, 0.747);
     margin-bottom: 20px;
   }
+  form label {
+    font-size: 1.3rem;
+  }
 }
 @media (min-width: 768px) {
   h1 {
@@ -234,6 +237,9 @@ Select {
     font-weight: bold;
     font-style: italic;
     letter-spacing: 4%;
+  }
+  form label {
+    font-size: 1.6rem;
   }
 }
 @media (min-width: 1024px) {
