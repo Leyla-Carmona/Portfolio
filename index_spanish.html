@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="scss/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
     <script src="javascript.js"></script>
     <title>Leyla Carmona Portfolio</title>
@@ -18,10 +18,11 @@
             <li class="main-nav">|<a href="#section2">Proyectos</a></li>
             <li class="main-nav">|<a href="#section3">Contactame </a></li>
             <li class="main-nav">|<a>Idioma:
-                <Select id="languages" onchange="navigateToPage()">
-                    <option value="https://leyla-carmona.github.io/Portfolio/index.html"> Inglés </option>
-                    <option value="https://leyla-carmona.github.io/Portfolio/index_spanish.html" selected> Español</option>
-            </select></a>
+                    <Select id="languages" onchange="navigateToPage()">
+                        <option value="https://leyla-carmona.github.io/Portfolio/index.html"> Inglés </option>
+                        <option value="https://leyla-carmona.github.io/Portfolio/index_spanish.html" selected> Español
+                        </option>
+                    </select></a>
             </li>
         </ul>
     </nav>
@@ -33,20 +34,43 @@
             <div class="header-aboutme">
                 <img src="img/Leyla.jpeg" alt="profilephoto" class="profile-image">
             </div>
+            <br>
             <div class="body-aboutme">
                 <h1 class="body-aboutme">Sobre mi</h1>
-                <p class="body-aboutme">
+                <hr>
+                <p>
                     Hola, soy Leyla Isolina Carmona Morales. <br>
-                    Soy una apasionada del desarrollo web con experiencia en lenguajes orientados a objetos y un
-                    objetivo claro: conseguir nuevas oportunidades en el ámbito de la programación. <br>
-
+                    Soy una apasionada del desarrollo y diseño web,
+                    con experiencia en diseño principalmente y con un objetivo claro:
+                    conseguir nuevas oportunidades en el ámbito de la programación. <br>
                     Algunas de mis habilidades clave son: <br>
-                    Lenguajes y tecnologías: HTML5, CSS, JavaScript, SASS, Diseño Web, jQuery y PHP. <br>
-                    Certificaciones: Curso de FrontEnd Developer, Curso de Diseño para Developers y Curso de Habilidades
-                    Blandas para el Desarrollo Profesional
+                    Lenguajes y tecnologías: HTML5, CSS, JavaScript, React, SASS, Tailwind y PHP. <br>
                     <br>
-                    Me apasiona el mundo geek y la tecnología, en especial los videojuegos, los cuales han sido una gran
-                    fuente de inspiración para mí.
+                <h1 class="body-aboutme">Certificaciones: </h1>
+                <hr>
+                <ul>
+                    <li>
+                        <p>➔ Curso de FrontEnd Developer - Platzi 2024 </p>
+                    </li>
+                    <li>
+                        <p>➔ Curso de Diseño para Developers - Platzi 2024 </p>
+                    </li>
+                    <LI>
+                        <p>➔ Curso Básico de Tailwind 2 y 3</p>
+                    </LI>
+                    <li>
+                        <p>➔ Curso de Diseño para Developers</p>
+                    </li>
+                    <li>
+                        <p>➔ Curso de Fundamentos de Sass: Crea tu Primera Landing Page</p>
+                    </li>
+                    <li>
+                        <p>➔ Curso de Responsive Design: Maquetación Mobile First</p>
+                    </li>
+                </ul>
+                <p>Me apasiona el mundo geek y la tecnología, en especial los videojuegos, los cuales han sido una gran
+                    fuente de inspiración para mí</p>
+                <hr>
             </div>
 
             <div class="footer-aboutme">
@@ -66,81 +90,113 @@
         <div class="projects">
             <div class="header-projects">
                 <h1 class="header-projects">Proyectos </h1>
-                <p>CLickea las imágenes para mayor información</p>
+                <p>Clickea las imágenes para mayor información</p>
             </div>
             <div class="body-projects">
                 <div class="projects-tab">
                     <figure class="projects-tab">
                         <img src="img/reactstore.png" alt="reactstore">
                         <figcaption>
-                            <p class="projects-tab" style="margin-bottom: 85%;">Web pague using React
+                            <pclass="projects-tab" style="margin-bottom: 85%;">Web pague using React
                                 <a class="projects-tab" href="https://leyla-carmona.github.io/onlinestore_react/">
                                     <br> → Click here </a>
-                            </p>
+                                </p>
                         </figcaption>
                         <br>
-                        <h1>Tienda online with React </h1>                         
-                        <h3>Tecnologías:</h3>
+                        <h1>Tienda con React </h1>
+                        <h1>Tecnologías:</h1>
                         <ul>
-                            <li><p>React</p></li>
-                            <li><p>HTML</p></li>
-                            <li><p>CSS</p></li>
-                            <li><p>SASS</p></li>
-                            <li><p>Tailwind</p></li>                            
-                            <li><p>JavaScript</p></li>
-                            <li><p>React Router</p></li>
+                            <li>
+                                <p>React</p>
+                            </li>
+                            <li>
+                                <p>HTML5 y CSS3</p>
+                            </li>
+                            <li>
+                                <p>SASS</p>
+                            </li>
+                            <li>
+                                <p>Tailwind</p>
+                            </li>
+                            <li>
+                                <p>JavaScript</p>
+                            </li>
+                            <li>
+                                <p>React Router</p>
+                            </li>
                         </ul><br>
-                        <h3>Funciones:</h3> 
+                        <h1>Funciones:</h1>
                         <ul>
-                            <li><p> Manejo de State con hooks como lo son useState y useEffect</p></li>
-                            <li><p> Rutas para navegación (Producto, detalles y página de carrito)</p></li>
-                            <li><p> Manejo de eventos como lo es agregar un producto al carrito</p></li>
-                            <li><p> Diseño responsivo para adaptarse a diferentes dispositivos</p></li>
-                            <li><p> Manipulación del DOM para contenido dinámico</p></li>
+                            
+    <li>
+        <p>
+            <b>Página de Detalle de Producto:</b> Al hacer clic en un producto, redirige a una página de detalles, imágenes y opción de agregar al carrito.
+        </p>
+    </li>
+    <li>
+        <p>
+            <b>Funcionalidad del Carrito:</b> Permite a los usuarios ver los productos que han agregado, así como eliminar artículos.
+        </p>
+    </li>
                         </ul> <br>
-                        <h3> Challenges:</h3>
-                        <p> Este proyecto es mi primera aplicación React, en la que asumí el desafío de aprender React desde cero. Diseñé una página dinámica con componentes interactivos, incorporando principios de diseño UX/UI para mejorar la experiencia del usuario. El proyecto me ayudó a comprender la estructura basada en componentes, la gestión de estados y la creación de una interfaz responsiva y visualmente atractiva con un equilibrio entre estética y funcionalidad. Fue un desafío, pero gratificante, que me permitió aplicar nuevas habilidades de manera efectiva. </p>. </p>
+                        <h1> Retos:</h1>
+                        <p> Este proyecto es mi primera aplicación React, en la que asumí el desafío de aprender React
+                            desde cero. Diseñé una página dinámica con componentes interactivos, incorporando principios
+                            de diseño UX/UI para mejorar la experiencia del usuario. El proyecto me ayudó a comprender
+                            la estructura basada en componentes, la gestión de estados y la creación de una interfaz
+                            responsiva y visualmente atractiva con un equilibrio entre estética y funcionalidad. Fue un
+                            desafío, pero gratificante, que me permitió aplicar nuevas habilidades de manera efectiva.
+                        </p>
                     </figure>
-                </div>  
+                </div>
                 <div class="projects-tab">
                     <figure class="projects-tab">
                         <img src="img/proyect1.png" alt="cvonlinepage">
                         <Figcaption>
-                            <p class="projects-tab" style="margin-bottom: 85%;">Ejemplo de un CV online
+                            <pclass="projects-tab" style="margin-bottom: 85%;">Ejemplo de un CV online
                                 <a class="projects-tab"
                                     href="https://leyla-carmona.github.io/Curriculum_Vitae/spanishindex.html">
                                     <br> → Click aqui </a>
-                            </p>
+                                </p>
                         </Figcaption>
                         <br>
-                        <h1>Currículum - online </h1>
-                        <br>
-                        <h3>Tecnologías:</h3>
+                        <h1>Currículum Vitae</h1>
+                        <h1>Tecnologías:</h1>
                         <ul>
                             <li>
-                                <p>HTML</p>
+                                <p>HTML5 y CSS3</p>
                             </li>
                             <li>
                                 <p>Animaciones </p>
                             </li>
                             <li>
-                                <p>CSS</p>
+                                <p>Responsive Design</p>
+                            </li>
+                            <li>
+                                <p>Fundamentos de UX|UI</p>
+                            </li>
+                            <li>
+                                <p>JavaScript</p>
+                            </li>
+                            <li>
+                                <p>Uso de Figma</p>
                             </li>
                         </ul>
                         <br>
-                        <h3>Funciones:</h3>
+                        <h1>Funciones:</h1>
                         <ul>
                             <li>
-                                <p>Diseño responsivo</p>
+                                <p>
+                                    <b>Perfil:</b> Presenta una breve introducción personal y profesional sobre mí, incluyendo un resumen de mis estudios y certificaciones.
+                                </p>
                             </li>
                             <li>
-                                <p>Estructuración para fácil lectura</p>
+                                <p>
+                                    <b>Listados de Habilidades:</b> Se presenta un desglose de habilidades técnicas en desarrollo web y diseño junto con un historial.
+                                </p>
                             </li>
-                            <li>
-                                <p>First mobile desgin</p>
-                            </li>
-                        </ul>
-                        <h3>Retos:</h3>
+                        </ul> <br>
+                        <h1>Retos:</h1>
                         <p> Mi objetivo era crear una presentación visualmente más atractiva de mis certificados.
                             El principal reto era organizar la información del CV de una manera que fuera atractiva e
                             informativa. Para lograrlo, utilicé colores neutros basados ​​en los principios de la
@@ -154,42 +210,49 @@
                     <figure class="projects-tab">
                         <img src="img/proyect2.png" alt="Onlinestore">
                         <Figcaption>
-                            <p class="projects-tab" style="margin-bottom: 85%;">Ejemplo de una tienda online
+                            <pclass="projects-tab" style="margin-bottom: 85%;">Ejemplo de una tienda online
                                 <a class="projects-tab" href="https://leyla-carmona.github.io/Online_EcoStore/">
                                     <br> → Click aqui </a>
-                            </p>
+                                </p>
                         </Figcaption>
                         <br>
                         <h1>EcoStore - online </h1>
-                        <br>
-                        <h3>Tecnologías:</h3>
+                        <h1>Tecnologías:</h1>
                         <ul>
+
                             <li>
-                                <p>HTML</p>
+                                <p>HTML5 y CSS3</p>
                             </li>
                             <li>
-                                <p>Animaciones con CSS</p>
+                                <p>Animaciones </p>
                             </li>
                             <li>
                                 <p>SASS</p>
                             </li>
                             <li>
-                                <p>UX/UI Technology</p>
+                                <p>UX|UI</p>
+                            </li>
+                            <li>
+                                <p>JavaScript</p>
+                            </li>
+                            <li>
+                                <p>Responsive Design</p>
                             </li>
                         </ul><br>
-                        <h3>Funciones:</h3>
+                        <h1>Funciones:</h1>
                         <ul>
                             <li>
-                                <p> Diseño responsivo</p>
+                                <p>
+                                    <b>Galería de Productos:</b> Muestra los productos en una cuadrícula, incluyendo imágenes y descripciones de cada uno.
+                                </p>
                             </li>
                             <li>
-                                <p> Animaciones</p>
-                            </li>
-                            <li>
-                                <p> Uso de la psicología del color</p>
+                                <p>
+                                    <b>Información sobre Sostenibilidad:</b> Explica la importancia de los productos ecológicos y su impacto positivo en el medio ambiente.
+                                </p>
                             </li>
                         </ul> <br>
-                        <h3> Retos:</h3>
+                        <h1> Retos:</h1>
                         <p> Este proyecto fue hecho en base a un cuso online que tome acerca de diseño UX, el mayor reto
                             que enfrenté a mi
                             parecer fue entender el uso básico de técnologías UX así como SASS y como aplicar sus
@@ -207,7 +270,7 @@
     <div class="contact">
         <footer>
             <h1>Contacto</h1>
-            <h3>Sientente libre de enviarme un email!</h3>
+            <h1>Sientente libre de enviarme un email!</h1>
             <form id="contactForm" action="https://formspree.io/f/xpwanlpy" method="post">
 
                 <label for="name">Nombre:</label>

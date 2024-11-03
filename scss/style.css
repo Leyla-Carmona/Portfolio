@@ -8,31 +8,50 @@ html {
   font-size: 62.5%;
 }
 
-body {
-  font-size: 1.6rem;
-}
-
 h1 {
-  font-family: "sahitya";
-  font-weight: bolder;
+  font-size: 5rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
   padding-top: 20px;
   padding-left: 20px;
 }
 
 h2 {
-  font-family: "Times New Roman", Times, serif;
+  font-size: 3rem;
+  font-family: "sahitya";
 }
 
-h3 {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  margin-left: 25px;
+p {
+  font-family: "monserrat";
+  z-index: 1;
+  font-size: 1rem;
 }
 
-ul {
-  margin-left: 60px;
+a, Select {
+  position: relative;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  padding-left: 10px;
 }
-ul li {
-  margin-top: -15px;
+
+header {
+  background-color: #BFB1B1;
+  width: 100%;
+  padding-bottom: 135px;
+  z-index: 0;
+}
+header .main-nav {
+  display: inline-block;
+  margin: 5px;
+}
+header .main-nav a, header .main-nav Select {
+  color: black;
+  font-family: "poppins";
+  font-size: 1.5rem;
+  width: auto;
+  font-style: italic;
+  margin-top: 5px;
 }
 
 Select {
@@ -40,117 +59,6 @@ Select {
   background-color: transparent;
 }
 
-/*Mobile*/
-@media (min-width: 320px) {
-  p {
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-family: "monserrat";
-    z-index: 1;
-    font-size: 1.3rem;
-    font-weight: bold;
-  }
-  a, Select {
-    position: relative;
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
-    font-size: 10px;
-    padding-top: 20px;
-    padding-left: 10px;
-  }
-  header {
-    background-color: #BFB1B1;
-    width: 100%;
-    padding-top: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 135px;
-    z-index: 0;
-  }
-  header .main-nav {
-    display: inline-block;
-  }
-  header .main-nav .main-nav a, header .main-nav .main-nav Select {
-    text-decoration: none;
-    color: black;
-    font-family: "poppins";
-    font-size: 12px;
-    font-weight: bolder;
-    font-style: italic;
-    letter-spacing: 4%;
-  }
-}
-/*tablets*/
-@media (min-width: 768px) {
-  body {
-    font-size: 2.5rem;
-  }
-  p {
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-family: "monserrat";
-    z-index: 1;
-    font-size: 1.37rem;
-    font-weight: bold;
-  }
-  a, Select {
-    position: relative;
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
-    font-size: 15px;
-    padding-top: 20px;
-    padding-left: 10px;
-  }
-  header {
-    background-color: #BFB1B1;
-    width: 100%;
-    padding-top: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 135px;
-    z-index: 0;
-  }
-  header .main-nav {
-    display: inline-block;
-  }
-  header .main-nav .main-nav a, header .main-nav .main-nav Select {
-    text-decoration: none;
-    color: black;
-    font-family: "poppins";
-    font-size: 20px;
-    font-weight: bolder;
-    font-style: italic;
-    letter-spacing: 4%;
-  }
-}
-/*Desktop*/
-@media (min-width: 1024px) {
-  body {
-    font-size: 3rem;
-  }
-  p {
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-family: "monserrat";
-    z-index: 1;
-    font-size: 1.37rem;
-    font-weight: bold;
-  }
-  a, Select {
-    position: relative;
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
-    font-size: 20px;
-    padding-top: 20px;
-    padding-left: 10px;
-  }
-}
 .section1 {
   box-shadow: -2px 10px 9px 0 rgba(0, 0, 0, 0.747);
 }
@@ -159,35 +67,19 @@ Select {
   width: 100%;
   height: auto;
 }
-.section1 .aboutme .header-aboutme {
-  position: absolute;
-  left: 75%;
-  top: 10%;
-  transform: translateX(-50%);
-  z-index: 1;
-}
-.section1 .aboutme .header-aboutme .profile-image {
-  width: 140px;
-  height: auto;
-  border-radius: 50%;
-  border: solid 2px black;
-  box-shadow: -2px 10px 9px 0 rgba(0, 0, 0, 0.747);
-  margin-bottom: 25px;
-}
-.section1 .aboutme .footer-aboutme {
-  padding-top: 12px;
-  padding-bottom: 5px;
-  padding-left: 10%;
-  padding-right: 2px;
+
+.footer-aboutme {
+  font-size: 1.3rem;
+  padding: 0 45px 20px 15px;
   background-color: #D9D9D9;
+  margin-bottom: 20px;
 }
-.section1 .aboutme .footer-aboutme img {
-  width: 15px;
+.footer-aboutme img {
+  width: 20px;
   height: auto;
   border-radius: 2px;
   display: inline;
-  margin-top: 2px;
-  box-shadow: -2px 10px 9px 0 rgba(0, 0, 0, 0.747);
+  margin-top: 13px;
 }
 
 .section2 .projects {
@@ -197,7 +89,7 @@ Select {
 }
 .section2 .projects .body-projects {
   margin-right: 5%;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -208,7 +100,14 @@ Select {
   margin: 20px;
   position: relative;
 }
-.section2 .projects .body-projects .projects-tab .projects-tab figcaption {
+.section2 .projects .body-projects .projects-tab li {
+  margin-top: -15px;
+}
+.section2 .projects .body-projects .projects-tab ul {
+  margin: 10%;
+  padding-left: 25px;
+}
+.section2 .projects .body-projects .projects-tab figcaption {
   margin-left: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -217,7 +116,7 @@ Select {
   opacity: 0;
   transition: opacity 0.5s ease;
 }
-.section2 .projects .body-projects .projects-tab .projects-tab img {
+.section2 .projects .body-projects .projects-tab img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -225,37 +124,147 @@ Select {
   transition: transform 0.5s ease, filter 0.5s ease;
   border: black solid 2px;
 }
-.section2 .projects .body-projects .projects-tab .projects-tab:hover img {
+.section2 .projects .body-projects .projects-tab:hover img {
   transform: scale(1.1);
   filter: opacity(0.5) blur(5px);
 }
-.section2 .projects .body-projects .projects-tab .projects-tab:hover figcaption {
-  margin-left: 50%;
+.section2 .projects .body-projects .projects-tab:hover figcaption {
   opacity: 1;
   color: black;
 }
 
 .section3 .contact footer {
+  justify-content: left;
   border: black solid 2px;
   background-color: #D9D9D9;
 }
 .section3 .contact footer form {
-  margin-left: 25px;
+  margin-left: 20px;
 }
-.section3 .contact footer form input,
+.section3 .contact footer form input {
+  width: 75%;
+  margin-bottom: 20px;
+}
 .section3 .contact footer form textarea {
-  width: 95%;
+  width: 85%;
 }
 .section3 .contact footer form #button {
+  font-size: xx-large;
   background-color: black;
   color: white;
   transition-duration: 0.4s;
-  width: 95%;
+  width: 85%;
   height: 55px;
-  left: 55%;
   margin-bottom: 20px;
+  font-family: "monserrat";
+  font-weight: bold;
 }
 .section3 .contact footer form #button:hover {
   background-color: #4caf50;
   color: white;
+}
+
+@media (min-width: 320px) {
+  p {
+    padding: 20px 20px 0 20px;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  .header-aboutme {
+    position: absolute;
+    left: 35%;
+    top: 10%;
+    z-index: 1;
+  }
+  .header-aboutme .profile-image {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    border: solid 2px black;
+    box-shadow: -2px 10px 9px 0 rgba(0, 0, 0, 0.747);
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+  .body-aboutme h1 {
+    font-size: 3rem;
+  }
+  .body-aboutme p {
+    font-size: 1.6rem;
+  }
+  .header-aboutme {
+    position: absolute;
+    left: 55%;
+    top: 5%;
+    z-index: 1;
+  }
+  .header-aboutme .profile-image {
+    width: 235px;
+    height: auto;
+    border-radius: 50%;
+    border: solid 2px black;
+    box-shadow: -2px 10px 9px 0 rgba(0, 0, 0, 0.747);
+    margin-bottom: 20px;
+  }
+  .projects-tab p {
+    padding-top: 20px;
+    font-size: 1.37rem;
+  }
+  a, Select {
+    font-size: 15px;
+    padding-top: 20px;
+  }
+  header {
+    background-color: #BFB1B1;
+    width: 100%;
+    padding: 5px 20px 135px 20px;
+    z-index: 0;
+  }
+  header .main-nav {
+    display: inline-block;
+  }
+  header .main-nav a, header .main-nav Select {
+    color: black;
+    font-family: "poppins";
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 4%;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    font-size: 3rem;
+  }
+  .body-aboutme h1 {
+    font-size: 3rem;
+  }
+  .body-aboutme p {
+    font-size: 1.6rem;
+  }
+  .header-aboutme {
+    position: absolute;
+    left: 65%;
+    top: 2%;
+    z-index: 1;
+  }
+  .header-aboutme .profile-image {
+    width: 280px;
+    height: auto;
+    border-radius: 50%;
+    border: solid 2px black;
+    box-shadow: -2px 10px 9px 0 rgba(0, 0, 0, 0.747);
+    margin-bottom: 20px;
+  }
+  a, Select {
+    font-size: 20px;
+    padding-top: 20px;
+  }
+  p {
+    font-size: 3rem;
+  }
 }/*# sourceMappingURL=style.css.map */
