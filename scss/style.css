@@ -12,8 +12,8 @@ h1 {
   font-size: 5rem;
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
-  padding-top: 20px;
-  padding-left: 20px;
+  padding-top: 5px;
+  padding-left: 5px;
 }
 
 h2 {
@@ -72,7 +72,7 @@ Select {
   font-size: 1.3rem;
   padding: 0 45px 20px 15px;
   background-color: #D9D9D9;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 .footer-aboutme img {
   width: 20px;
@@ -89,7 +89,7 @@ Select {
 }
 .section2 .projects .body-projects {
   margin-right: 5%;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -97,7 +97,7 @@ Select {
 .section2 .projects .body-projects .projects-tab {
   width: 250px;
   height: auto;
-  margin: 20px;
+  margin: 5px;
   position: relative;
 }
 .section2 .projects .body-projects .projects-tab li {
@@ -139,7 +139,7 @@ Select {
   background-color: #D9D9D9;
 }
 .section3 .contact footer form {
-  margin-left: 20px;
+  margin-left: 5px;
 }
 .section3 .contact footer form input {
   width: 75%;
@@ -155,7 +155,7 @@ Select {
   transition-duration: 0.4s;
   width: 85%;
   height: 55px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   font-family: "monserrat";
   font-weight: bold;
 }
@@ -166,7 +166,7 @@ Select {
 
 @media (min-width: 320px) {
   p {
-    padding: 20px 20px 0 20px;
+    padding: 15px 20px 0 15px;
     font-size: "monserrat";
   }
   h1 {
@@ -177,6 +177,7 @@ Select {
     left: 35%;
     top: 10%;
     z-index: 1;
+    list-style-type: none;
   }
   .header-aboutme .profile-image {
     width: 185px;
@@ -184,7 +185,7 @@ Select {
     border-radius: 50%;
     border: solid 2px black;
     box-shadow: -2px 10px 9px 0 rgba(0, 0, 0, 0.747);
-    margin-bottom: 20px;
+    margin-bottom: 5px;
   }
   form label {
     font-size: 1.3rem;
@@ -212,7 +213,7 @@ Select {
     border-radius: 50%;
     border: solid 2px black;
     box-shadow: -2px 10px 9px 0 rgba(0, 0, 0, 0.747);
-    margin-bottom: 20px;
+    margin-bottom: 5px;
   }
   .projects-tab p {
     padding-top: 20px;
@@ -220,12 +221,12 @@ Select {
   }
   a, Select {
     font-size: 15px;
-    padding-top: 20px;
+    padding-top: 5px;
   }
   header {
     background-color: #BFB1B1;
     width: 100%;
-    padding: 5px 20px 135px 20px;
+    padding: 5px 5px 135px 5px;
     z-index: 0;
   }
   header .main-nav {
@@ -265,11 +266,11 @@ Select {
     border-radius: 50%;
     border: solid 2px black;
     box-shadow: -2px 10px 9px 0 rgba(0, 0, 0, 0.747);
-    margin-bottom: 20px;
+    margin-bottom: 5px;
   }
   a, Select {
     font-size: 20px;
-    padding-top: 20px;
+    padding-top: 5px;
   }
   p {
     font-size: 3rem;
