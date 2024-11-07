@@ -99,6 +99,7 @@ Select {
   height: auto;
   margin: 5px;
   position: relative;
+  text-align: left;
 }
 .section2 .projects .body-projects .projects-tab li {
   margin-top: -15px;
