@@ -202,10 +202,23 @@ select {
 
 @media (min-width: 768px) {
   .body-aboutme p { font-size: map-get($font-size, "med"); }
-  .header-aboutme { left: 55%; top: 5%; }
+  .header-aboutme { left: 55%; top: 5%;
+    .profile-image {
+        width: 240px;
+        border-radius: 50%;
+        border: solid 2px black;
+        box-shadow: $shadow;
+      }
+}
 }
 
 @media (min-width: 1024px) {
   .body-aboutme p { font-size: map-get($font-size, "med"); }
-  .header-aboutme { left: 65%; top: 2%; }
+  .header-aboutme { left: 65%; top: 1%; 
+    .profile-image {
+        width: 270px;
+        border-radius: 50%;
+        border: solid 2px black;
+        box-shadow: $shadow;
+      }}
 }
