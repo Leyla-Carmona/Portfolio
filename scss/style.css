@@ -2,6 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  text-align: justify;
 }
 
 html {
@@ -31,7 +32,6 @@ a, select {
   text-decoration: none;
   font-weight: bold;
   color: black;
-  padding-left: 10px;
 }
 
 header {
@@ -180,6 +180,33 @@ select {
     border: solid 2px black;
     box-shadow: -2px 10px 9px 0 rgba(0, 0, 0, 0.747);
   }
+  #certificados {
+    padding: 5%;
+    align-content: stretch;
+    text-align: justify;
+  }
+  .certifications {
+    padding-bottom: 2%;
+  }
+  .imgcertifications {
+    border-radius: 300px;
+    margin-left: 2%;
+    margin-right: 2%;
+    border: solid black 2px;
+    padding: 7%;
+    align-self: center;
+  }
+  h4 {
+    padding: 2%;
+  }
+  #card {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 5px;
+  }
 }
 @media (min-width: 768px) {
   .body-aboutme p {
@@ -195,7 +222,33 @@ select {
     border: solid 2px black;
     box-shadow: -2px 10px 9px 0 rgba(0, 0, 0, 0.747);
   }
+  #card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    gap: 5px;
+    margin-bottom: 5px;
+  }
+  h4 {
+    font-size: 22px;
+    padding: 4%;
+  }
 }
+#certificados {
+  padding: 1%;
+  align-content: stretch;
+  text-align: justify;
+}
+
+.certifications p {
+  padding-bottom: 2%;
+}
+.certifications #card {
+  justify-content: space-between;
+}
+
 @media (min-width: 1024px) {
   .body-aboutme p {
     font-size: 1.6rem;
@@ -209,5 +262,29 @@ select {
     border-radius: 50%;
     border: solid 2px black;
     box-shadow: -2px 10px 9px 0 rgba(0, 0, 0, 0.747);
+  }
+  h4 {
+    font-size: 1.6rem;
+    padding: 1%;
+  }
+  .imgcertifications {
+    width: auto;
+    padding: 3%;
+  }
+  .certifications {
+    padding-bottom: 2%;
+  }
+  #certificado {
+    position: absolute;
+    right: 0;
+  }
+  #card {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    gap: 5px;
+    margin-bottom: 5px;
   }
 }/*# sourceMappingURL=style.css.map */

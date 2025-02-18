@@ -8,16 +8,16 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="scss/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
-    <script src="javascript.js"></script>
+    <script src="javascript.js" defer></script>
     <title>Leyla Carmona Portfolio</title>
 </head>
 <header>
     <nav>
         <ul class="main-nav">
             <li class="main-nav"><a href="#section1">Acerca de mi</a></li>
-            <li class="main-nav">|<a href="#section2">Proyectos</a></li>
-            <li class="main-nav">|<a href="#section3">Contactame </a></li>
-            <li class="main-nav">|<a>Idioma:
+            <li class="main-nav"> | <a href="#section2">Proyectos</a></li>
+            <li class="main-nav"> | <a href="#section3">Contactame </a></li>
+            <li class="main-nav"> | <a>Idioma:
                     <Select id="languages" onchange="navigateToPage()">
                         <option value="https://leyla-carmona.github.io/Portfolio/index.html"> Inglés </option>
                         <option value="https://leyla-carmona.github.io/Portfolio/index_spanish.html" selected> Español
@@ -27,7 +27,6 @@
         </ul>
     </nav>
 </header>
-
 <body>
     <section id="section1" class="section1">
         <div class="aboutme">
@@ -61,36 +60,13 @@
                         <li><p>➔ Atención al detalle y precisión en diseño a código</p> </li>
                         <li><p>➔ Pensamiento creativo, analítico y trabajo en equipo.</p> </li>
                     </ul>
-                </p>
-                <h1 class="body-aboutme">Certificaciones: </h1>
+                </p>                
+                <h1 class="body-aboutme" id="certifiedtitle"></h1>
                 <hr>
-                <ul>
-                    <li>
-                        <p>➔ Modulo Completado: HTML y CSS a Profundidad - Platzi 2024 </p>
-                    </li>
-                    <li>
-                        <p>➔ Curso de FrontEnd Developer - Platzi 2024 </p>
-                    </li>
-                    <li>
-                        <p>➔ Curso de Diseño para Developers - Platzi 2024 </p>
-                    </li>
-                    <LI>
-                        <p>➔ Curso Básico de Tailwind 2 y 3 - Platzi 2024 </p>
-                    </LI>
-                    <li>
-                        <p>➔ Curso de Diseño para Developers - Platzi 2024 </p>
-                    </li>
-                    <li>
-                        <p>➔ Curso de Fundamentos de Sass: Crea tu Primera Landing Page - Platzi 2024 </p>
-                    </li>
-                    <li>
-                        <p>➔ Curso de Responsive Design: Maquetación Mobile First - Platzi 2024 </p>
-                    </li>
-                </ul>
-                <p>Me apasiona el mundo geek y la tecnología, en especial los videojuegos, los cuales han sido una gran
-                    fuente de inspiración para mí</p>
+                <div id="certificados"></div>            
                 <hr>
-            </div>
+            </div>            
+        </div>
 
             <div class="footer-aboutme">
                 <a href="https://www.linkedin.com/in/leylacarmona/"> <img id="socialnetwork" src="img/linkedn.png"
@@ -99,6 +75,7 @@
                         alt="githublogo"> Perfil de GitHub</a>
                 <a href="https://platzi.com/p/LeylaCarmona0812/"> <img id="Curriculum_Vitae" src="https://yt3.googleusercontent.com/jSVrx7B9DIXfx7-Mh16nzdqXcBFoa-FV3fgItxePwv17Dst-U-JuC3_TR6rLq0quRjJPpHy5RQ=s900-c-k-c0x00ffffff-no-rj"
                             alt="githublogo"> Mis certificaciones</a>
+                           
             </div>
         </div>
     </section>
