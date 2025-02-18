@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/6de43f83-6daf-4a8b-a8dc-7a745fc67f6c)# VERSION 1
+# VERSION 1
 # English
 
 Hi! Thanks for being here, I want to show you my portfolio:
