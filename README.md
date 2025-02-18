@@ -44,7 +44,7 @@ Desarrollé un portafolio utilizando mis habilidades para la programacion en Fro
 ## Tecnologías Utilizadas:
  
 <b> HTML5: </b> Estructura y contenido semántico. <br>
-<b> CSS3: </b> Estilos y diseño responsivo utilizando Flexbox y Grid. <br>
+<b> CSS3: </b> Estilos y diseño responsivo utilizando Flexbox y Grid.  <br>
 <b> Frameworks: </b> Bootstrap para componentes y diseño responsivo. <br>
 
 ## Objetivo y resultado:
@@ -55,11 +55,11 @@ El objetivo de este proyecto era crear una página de inicio atractiva que no so
 
 Capturas de Pantalla:
 Escritorio:
-![image](https://github.com/user-attachments/assets/f676beb1-3daf-43ab-b241-702745d3963b)
+<br> ![image](https://github.com/user-attachments/assets/f676beb1-3daf-43ab-b241-702745d3963b)
 
 Dispositivos celulares:
 Iphone 11: 
-![image](https://github.com/user-attachments/assets/8b0b18cc-2cdd-4431-9086-f8df3655c4b4)
+<br> ![image](https://github.com/user-attachments/assets/8b0b18cc-2cdd-4431-9086-f8df3655c4b4)
 
 
 #VERSION 2
@@ -71,14 +71,14 @@ MEJORAS:
 
 Capturas de Pantalla:
 Mobile:
-![image](https://github.com/user-attachments/assets/1a3e18ae-93e6-4334-ba2d-ad59c4f96f5b)
+<br> ![image](https://github.com/user-attachments/assets/1a3e18ae-93e6-4334-ba2d-ad59c4f96f5b)
 
 
 #VERSION 3(En progreso)
 Con el fin de aplicar conocimientos en javascript y dominio del DOM he tomado la decisión de mudar completamente el sitio web a tipo DOM, este proceso se ha iniciando con certificados que fue mi sujeto de pruebas, la idea es hacer un SPA que traiga la información del idioma tanto en español como inglés, eliminando el index adicional, siempre buscando optimizar en espacio, tiempos de carga y rendimiento, y claro como es de esperar la información dentro del portafolio la cual recibirá un pequeño ajuste para ir agregando nuevas habilidades y estrategias
 
 Captura de Pantalla al momento de estar en el proceso:
-![image](https://github.com/user-attachments/assets/932f04f2-e5cf-4843-8639-6b3f71664dd3)
-![image](https://github.com/user-attachments/assets/a0577bdc-2acc-4896-b321-5905b6680f13)
-![image](https://github.com/user-attachments/assets/ee0726e7-8211-48f6-a755-42ef374eae03)
+<br> ![image](https://github.com/user-attachments/assets/932f04f2-e5cf-4843-8639-6b3f71664dd3)
+<br> ![image](https://github.com/user-attachments/assets/a0577bdc-2acc-4896-b321-5905b6680f13)
+<br> ![image](https://github.com/user-attachments/assets/ee0726e7-8211-48f6-a755-42ef374eae03)
 
