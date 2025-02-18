@@ -60,7 +60,7 @@ async function mycourseseng() {
   console.log(courses["results"]);
   let div1 = document.getElementById("certificados");
   const title = document.getElementById('certifiedtitleeng');
-  title.innerText = 'Most recent certifications:'  
+  title.innerText = 'Most recent certifications:';  
   courses["results"].slice(0,7).forEach((courses) => {
    
     const course = document.createElement("a");
