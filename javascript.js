@@ -11,7 +11,7 @@ mycourseseng();
 
 async function mycourses() {
   const res = await fetch(
-    "https://gist.githubusercontent.com/Leyla-Carmona/edc0c1cb1a06e5af89650ea1062208e6/raw/dcd801a0fbe32414d4b5bb175e107b8344a0e77f/courses"
+    "https://gist.githubusercontent.com/Leyla-Carmona/edc0c1cb1a06e5af89650ea1062208e6/raw/1034d15f1c92adeef92c6ebf8d7d0d35ab622443/courses"
   );
 // INGLÉS URL "https://gist.githubusercontent.com/Leyla-Carmona/5fd1d0a609e96d0006811941dd9aaabb/raw/6c38da5e31dc889ba184214ab46d8f6bc98908b0/englishcourses"
 //HACER VALIDADOR PARA SOLO TENER UN INDEX Y CAMBIAR LA INFORMACIÓN DINÁMICAMENTE
@@ -53,7 +53,7 @@ async function mycourses() {
 
 async function mycourseseng() {
   const res = await fetch(
-    "https://gist.githubusercontent.com/Leyla-Carmona/5fd1d0a609e96d0006811941dd9aaabb/raw/6c38da5e31dc889ba184214ab46d8f6bc98908b0/englishcourses"
+    "https://gist.githubusercontent.com/Leyla-Carmona/5fd1d0a609e96d0006811941dd9aaabb/raw/9c14fdd9b1958bc49d1cbb41a6b158a74d15ba99/englishcourses"
   );
   
   const courses = await res.json();
