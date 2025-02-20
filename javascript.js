@@ -11,7 +11,7 @@ mycourseseng();
 
 async function mycourses() {
   const res = await fetch(
-    "https://gist.githubusercontent.com/Leyla-Carmona/edc0c1cb1a06e5af89650ea1062208e6/raw/d193e0713a156199c618c13ff40c80e726300936/courses"
+    "https://raw.githubusercontent.com/Leyla-Carmona/Keys/refs/heads/main/data.json?token=GHSAT0AAAAAAC6PI275VM2VGTN54U5W6AVWZ5W6KGQ"
    );
 // INGLÉS URL "https://gist.githubusercontent.com/Leyla-Carmona/5fd1d0a609e96d0006811941dd9aaabb/raw/6c38da5e31dc889ba184214ab46d8f6bc98908b0/englishcourses"
 //HACER VALIDADOR PARA SOLO TENER UN INDEX Y CAMBIAR LA INFORMACIÓN DINÁMICAMENTE
