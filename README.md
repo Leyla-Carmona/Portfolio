@@ -82,3 +82,12 @@ Captura de Pantalla al momento de estar en el proceso:
 <br> ![image](https://github.com/user-attachments/assets/a0577bdc-2acc-4896-b321-5905b6680f13)
 <br> ![image](https://github.com/user-attachments/assets/ee0726e7-8211-48f6-a755-42ef374eae03)
 
+
+21/2/2025
+Versión 3 subida:
+Cambios importantes: 
+-> Ajuste de margenes y ubiación de titulos y letras para una mejor visualización
+-> HTML Dinamico cargado con un json para evitar las rutas "quemadas" en el HTML dejando solo un par de textos en el mismo y el resto de manera dinámica
+-> Mejorado SPA para flexibilidad.
+![image](https://github.com/user-attachments/assets/d67fe04e-580b-487f-bd61-fc2c74b40ca0)
+
