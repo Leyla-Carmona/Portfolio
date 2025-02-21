@@ -19,6 +19,7 @@ h1 {
 h2 {
   font-size: 3rem;
   font-family: "sahitya";
+  padding-top: 2%;
 }
 
 p {
@@ -96,13 +97,9 @@ select {
   margin: 5px;
   position: relative;
   text-align: left;
-}
-.section2 .projects .body-projects .projects-tab li {
-  margin-top: -15px;
-}
-.section2 .projects .body-projects .projects-tab ul {
-  margin: 10%;
-  padding-left: 25px;
+  margin-bottom: 150px ul;
+  margin-bottom-margin: 10%;
+  margin-bottom-padding-left: 25px;
 }
 .section2 .projects .body-projects .projects-tab figcaption {
   margin-left: 50%;
@@ -112,6 +109,7 @@ select {
   text-align: center;
   opacity: 0;
   transition: opacity 0.5s ease;
+  margin-top: -100px;
 }
 .section2 .projects .body-projects .projects-tab img {
   width: 100%;
@@ -205,7 +203,6 @@ select {
     justify-content: flex-start;
     align-items: center;
     text-align: left;
-    margin-bottom: 5px;
   }
 }
 @media (min-width: 768px) {
@@ -271,12 +268,13 @@ select {
     width: auto;
     padding: 3%;
   }
-  .certifications {
-    padding-bottom: 2%;
-  }
   #certificado {
     position: absolute;
     right: 0;
+  }
+  #function_0, #function_1, #function_2, #technologies_0, #technologies_1, #technologies_2 {
+    height: 360px;
+    padding: 9%;
   }
   #card {
     display: flex;

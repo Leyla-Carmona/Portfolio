@@ -42,6 +42,7 @@ h1 {
 h2 {
   font-size: map-get($font-size, "lg");
   font-family: map-get($font-family, "h2");
+  padding-top: 2%;
 }
 
 p {
@@ -125,8 +126,8 @@ select {
         margin: $padding-standard;
         position: relative;
         text-align: left;
-
-        li { margin-top: -15px; }
+        margin-bottom: 150px
+   //     li { margin-top: -15px; }
         ul { margin: 10%; padding-left: 25px; }
 
         figcaption {
@@ -137,6 +138,7 @@ select {
           text-align: center;
           opacity: 0;
           transition: opacity 0.5s ease;
+          margin-top: -100px;
         }
 
         img {
@@ -229,7 +231,7 @@ h4{
   justify-content: flex-start;
   align-items: center;
   text-align: left;
-  margin-bottom: 5px;
+//  margin-bottom: 5px;
 }
 
 
@@ -304,7 +306,7 @@ h4{
     }
 
     .certifications{
-      padding-bottom: 2%;  
+    //  padding-bottom: 2%;  
       }
 
       
@@ -313,7 +315,11 @@ h4{
        right: 0;
     }
 
-    
+
+    #function_0, #function_1, #function_2, #technologies_0, #technologies_1, #technologies_2{
+  height: 360px;
+  padding: 9%;
+}
 
 #card{
   display: flex;
