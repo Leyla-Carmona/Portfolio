@@ -12,7 +12,8 @@ function selection() {
   language = 1;
   location.hash = '/English';
  } else{
-  language = 0;
+  language = 0;  
+  location.hash = '';
  }
  languageselection(language);
 }
