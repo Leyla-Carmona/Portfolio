@@ -1,16 +1,16 @@
 selection()
 
 function selection() {
- location.hash = '';
  let page = document.getElementById("languages");
  if(page == null)
  {
   page = 0;
  }
  let lgn = page.value;
- if(lgn == 'Inglés' || lgn == 'English')
+ if(lgn == 'English')
  {
   language = 1;
+  location.hash = '/English';
  } else{
   language = 0;
  }
@@ -22,8 +22,14 @@ async function languageselection(selection) {
       'https://raw.githubusercontent.com/Leyla-Carmona/Data_index_Portfolio/refs/heads/main/api_index/index.json');
   const courses = await res.json();
    console.log(courses.results[selection]);
+
+   document.getElementById('nav1').innerText = courses.results[selection].nav1 || '';   
+   const nav2 = document.getElementById('nav2');
+   nav2.innerText = courses.results[selection].nav2 || '';   
+   const nav3 = document.getElementById('nav3');
+   nav3.innerText = courses.results[selection].nav3 || '';   
    const div = document.getElementById('aboutmedescription');
-   const title = document.getElementById('aboutmetitle');
+   const title = document.getElementById('aboutmetitle'); 
    title.innerText = courses.results[selection].aboutme_title || '';   
    const text = document.getElementById('aboutmetext');
    text.innerHTML = courses.results[selection].text_title;
@@ -38,6 +44,7 @@ async function languageselection(selection) {
    projectstitle.innerHTML = courses.results[selection].projectstitle;
    const projectstext = document.getElementById('projectstext');
    projectstext.innerHTML = courses.results[selection].projectstext;
+   document.getElementById('platzilogo').innerHTML = courses.results[selection].platziprofile || '';
 
    if(selection == 1)
    {

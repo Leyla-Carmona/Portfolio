@@ -12,16 +12,15 @@
     <title>Leyla Carmona Portfolio</title>
 </head>
 <header>
-    <nav>
+    <nav>     
         <ul class="main-nav">
-            <li class="main-nav"><a href="#section1">Acerca de mi</a></li>
-            <li class="main-nav"> | <a href="#section2">Proyectos</a></li>
-            <li class="main-nav"> | <a href="#section3">Contactame </a></li>
-            <li class="main-nav"> | <a>Idioma:
-                    <Select id="languages" onchange="selection()">
-                        <option value="Inglés"> Inglés </option>
-                        <option value="Español" selected> Español
-                        </option>
+            <li class="main-nav"> | <a href="#section1" id="nav1"></a></li>
+            <li class="main-nav"> | <a href="#section2" id="nav2"></a></li>
+            <li class="main-nav"> | <a href="#section3" id="nav3"></a></li>
+            <li class="main-nav"> | <a>
+                    <Select onchange="selection()" id="languages">
+                        <option value="English" >English</option>
+                        <option value="Spanish" selected> Español</option>
                     </select></a>
             </li>
         </ul>
@@ -53,12 +52,10 @@
 
                 <div class="footer-aboutme">
                     <a href="https://www.linkedin.com/in/leylacarmona/"> <img id="socialnetwork" src="img/linkedn.png"
-                            alt="linkdnlogo"> Perfil de Linkedn</a>
+                            alt="linkdnlogo" > Linkedn</a>
                     <a href="https://github.com/Leyla-Carmona"> <img id="socialnetwork" src="img/githublogo.png"
-                            alt="githublogo"> Perfil de GitHub</a>
-                    <a href="https://platzi.com/p/LeylaCarmona0812/"> <img id="Curriculum_Vitae"
-                            src="https://yt3.googleusercontent.com/jSVrx7B9DIXfx7-Mh16nzdqXcBFoa-FV3fgItxePwv17Dst-U-JuC3_TR6rLq0quRjJPpHy5RQ=s900-c-k-c0x00ffffff-no-rj"
-                            alt="githublogo"> Mis certificaciones</a>
+                            alt="githublogo"> GitHub</a>
+                    <a href="https://platzi.com/p/LeylaCarmona0812/"  id="platzilogo"></a>
                 </div>
             </div>
     </section>
