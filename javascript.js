@@ -73,11 +73,11 @@ async function mycourses() {
   deletecourses();
   const res = await fetch('https://raw.githubusercontent.com/Leyla-Carmona/Data_index_Portfolio/refs/heads/main/api_index/output.json');
    const courses = await res.json();
-  console.log(courses["results"]);
+  console.log(courses);
   let div1 = document.getElementById("certificados");
   const title = document.getElementById('certifiedtitle');
   title.innerText = 'Certificaciones más recientes:'  
-  courses["results"].slice(0,7).forEach((courses) => {
+  courses.slice(0,7).forEach((courses) => {
    
     const course = document.createElement("a");
     const description = document.createElement('h4');
@@ -112,11 +112,11 @@ async function mycourseseng() {
   const res = await fetch('https://raw.githubusercontent.com/Leyla-Carmona/Data_index_Portfolio/refs/heads/main/api_index/outputeng.json');
   
   const courses = await res.json();
-  console.log(courses["results"]);
+  console.log(courses);
   let div1 = document.getElementById("certificados");
   const title = document.getElementById('certifiedtitle');
   title.innerText = 'Most recent certifications:';  
-  courses["results"].slice(0,7).forEach((courses) => {
+  courses.slice(0,7).forEach((courses) => {
    
     const course = document.createElement("a");
     const description = document.createElement('h4');
