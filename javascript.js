@@ -71,7 +71,7 @@ async function languageselection(selection) {
 
 async function mycourses() {
   deletecourses();
-  const res = await fetch('https://raw.githubusercontent.com/Leyla-Carmona/Data_index_Portfolio/refs/heads/main/api_index/data.json');
+  const res = await fetch('https://raw.githubusercontent.com/Leyla-Carmona/Data_index_Portfolio/refs/heads/main/api_index/output.json');
    const courses = await res.json();
   console.log(courses["results"]);
   let div1 = document.getElementById("certificados");
@@ -109,8 +109,7 @@ async function mycourses() {
 async function mycourseseng() {  
   deletecourses();
     
-  const res = await fetch('https://raw.githubusercontent.com/Leyla-Carmona/Data_index_Portfolio/refs/heads/main/api_index/dataenglish.json');
-  
+  const res = await fetch('https://raw.githubusercontent.com/Leyla-Carmona/Data_index_Portfolio/refs/heads/main/api_index/outputeng.json');  
   const courses = await res.json();
   console.log(courses["results"]);
   let div1 = document.getElementById("certificados");
