@@ -109,7 +109,8 @@ async function mycourses() {
 async function mycourseseng() {  
   deletecourses();
     
-  const res = await fetch('https://raw.githubusercontent.com/Leyla-Carmona/Data_index_Portfolio/refs/heads/main/api_index/outputeng.json');  
+  const res = await fetch('https://raw.githubusercontent.com/Leyla-Carmona/Data_index_Portfolio/refs/heads/main/api_index/outputeng.json');
+  
   const courses = await res.json();
   console.log(courses["results"]);
   let div1 = document.getElementById("certificados");
