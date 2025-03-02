@@ -65,10 +65,20 @@ header {
   padding-bottom: 135px;
   z-index: 0;
 
+  nav{
+    position: fixed;
+    z-index: 6;
+    background-color: rgba(255, 255, 255, 0.149);
+    width: 100%;
+    backdrop-filter: blur(1rem);
+//    filter: blur(1rem);
+  }
   .main-nav {
+    margin-top: 3px;
     display: inline-block;
-    margin: 5px;
-
+    margin-right: 8px;
+    margin-left: 4px;
+    text-align: center;
     a {
       color: black;
       font-family: map-get($font-family, "nav");
@@ -91,6 +101,7 @@ select {
     background-color: $secondarycolor;
     width: 100%;
     height: auto;
+    padding-top: 104px;
   }
 }
 
@@ -191,8 +202,10 @@ select {
   h1 { font-size: map-get($font-size, "lg"); }
   .header-aboutme {
     position: absolute;
-    left: 42%;
-    top: 10%;
+    justify-self: anchor-center;
+    top: 63px;
+
+    
     .profile-image {
       width: 180px;
       border-radius: 50%;
@@ -239,9 +252,11 @@ h4{
 
 @media (min-width: 768px) {
   .body-aboutme p { font-size: map-get($font-size, "med"); }
-  .header-aboutme { left: 55%; top: 5%;
+  .header-aboutme { 
+    left: 55%;
+    top: 12%;
     .profile-image {
-        width: 240px;
+        width: 190px;
         border-radius: 50%;
         border: solid 2px black;
         box-shadow: $shadow;
@@ -262,6 +277,10 @@ h4{
       font-size: 22px;
       padding: 4%;
     }
+    
+  .section1 .aboutme{
+    padding: 0;
+  }
 }
 
 #certificados{
@@ -286,9 +305,9 @@ h4{
     font-size: map-get($font-size, "med"); 
   }
   .header-aboutme { 
-    left: 65%; top: 1%; 
+    left: 65%; top: 38px; 
     .profile-image {
-        width: 270px;
+        width: 200px;
         border-radius: 50%;
         border: solid 2px black;
         box-shadow: $shadow;
