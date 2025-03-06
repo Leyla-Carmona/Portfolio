@@ -172,6 +172,7 @@ select {
   p {
     padding: 15px 20px 0 15px;
     font-size: 1.5rem;
+    margin-bottom: 4%;
   }
   label {
     font-size: 1.5rem;
@@ -179,13 +180,16 @@ select {
   h1 {
     font-size: 3rem;
   }
+  #skillstext ul, #skillstext li, #skillstext strong {
+    list-style-type: none;
+  }
   .header-aboutme {
     position: absolute;
     justify-self: anchor-center;
     top: 63px;
   }
   .header-aboutme .profile-image {
-    width: 180px;
+    width: 165px;
     border-radius: 50%;
     border: solid 2px black;
     box-shadow: -2px 10px 9px 0 rgba(0, 0, 0, 0.747);
@@ -221,13 +225,14 @@ select {
 @media (min-width: 768px) {
   .body-aboutme p {
     font-size: 1.6rem;
+    margin-bottom: 0;
   }
   .header-aboutme {
     left: 55%;
     top: 6%;
   }
   .header-aboutme .profile-image {
-    width: 190px;
+    width: 176px;
     border-radius: 50%;
     border: solid 2px black;
     box-shadow: -2px 10px 9px 0 rgba(0, 0, 0, 0.747);
@@ -285,7 +290,7 @@ select {
     top: 38px;
   }
   .header-aboutme .profile-image {
-    width: 200px;
+    width: 160px;
     border-radius: 50%;
     border: solid 2px black;
     box-shadow: -2px 10px 9px 0 rgba(0, 0, 0, 0.747);

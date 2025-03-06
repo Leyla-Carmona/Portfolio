@@ -197,9 +197,16 @@ select {
 }
 
 @media (min-width: 320px) {
-  p { padding: 15px 20px 0 15px; font-size: 1.5rem;}
+  p { padding: 15px 20px 0 15px; font-size: 1.5rem; 
+    margin-bottom: 4%;} 
   label {font-size: 1.5rem;}
   h1 { font-size: map-get($font-size, "lg"); }
+
+  #skillstext{
+    ul,li,strong{
+      list-style-type: none;
+    }
+  }
   .header-aboutme {
     position: absolute;
     justify-self: anchor-center;
@@ -207,7 +214,7 @@ select {
 
     
     .profile-image {
-      width: 180px;
+      width: 165px;
       border-radius: 50%;
       border: solid 2px black;
       box-shadow: $shadow;
@@ -252,12 +259,12 @@ h4{
 }
 
 @media (min-width: 768px) {
-  .body-aboutme p { font-size: map-get($font-size, "med"); }
+  .body-aboutme p { font-size: map-get($font-size, "med"); margin-bottom: 0; }
   .header-aboutme { 
     left: 55%;
     top: 6%;
     .profile-image {
-        width: 190px;
+        width: 176px;
         border-radius: 50%;
         border: solid 2px black;
         box-shadow: $shadow;
@@ -265,8 +272,7 @@ h4{
     }  
 
     #card{
-      display: flex
-;
+      display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
@@ -324,7 +330,7 @@ h4{
   .header-aboutme { 
     left: 65%; top: 38px; 
     .profile-image {
-        width: 200px;
+        width: 160px;
         border-radius: 50%;
         border: solid 2px black;
         box-shadow: $shadow;
