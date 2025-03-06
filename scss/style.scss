@@ -225,12 +225,13 @@ select {
   }
 
 
-.imgcertifications{ //320
+.imgcertifications{ 
   border-radius: 300px;
   margin-left: 2%;
   margin-right: 2%;
   border: solid black 2px;
-  padding: 7%;
+  width: 80px;
+  height: 30px;
   align-self: center;
 }
 h4{
@@ -264,15 +265,22 @@ h4{
     }  
 
     #card{
-      display: flex;
-              flex-direction: row;
-              justify-content: space-between;
-              align-items: center;
-              text-align: left;
-              gap: 5px;
-              margin-bottom: 5px;
+      display: flex
+;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        margin-bottom: 5px;
+        padding-left: 25px;
+        padding-right: 40px;
     }
-    
+ 
+    .imgcertifications{ 
+      width: 70px;
+      height: 60px;
+    }
+
     h4{
       font-size: 22px;
       padding: 4%;
@@ -281,6 +289,15 @@ h4{
   .section1 .aboutme{
     padding: 0;
   }
+}
+
+.imgcertifications{ 
+  border-radius: 300px;
+  margin-left: 2%;
+  margin-right: 2%;
+  border: solid black 2px;
+  padding: 3%;
+  align-self: center;
 }
 
 #certificados{
@@ -323,12 +340,27 @@ h4{
       width: auto; // Ajusta el tamaño según lo que necesites
       padding: 3%;  // Reduce el padding si sigue viéndose grande
     }
-      
+    
+    #card{
+      display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: left;
+        gap: 5px;
+        margin-bottom: 5px;
+        padding-right: 134px;
+    }
+    
     #certificado{
       position: absolute;
-       right: 0;
+       right: 0;       
+       padding-right: 50px;
     }
 
+    .certifications{      
+      padding-right: 21px;
+    }
 
     #function_0, #function_1, #function_2, #technologies_0, #technologies_1, #technologies_2{
   height: 360px;

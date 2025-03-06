@@ -39,7 +39,7 @@ async function languageselection(selection) {
    const text_tech = document.getElementById('skillstext');
    text_tech.innerHTML = courses.results[selection].text_tech;
    const aboutmeskills = document.getElementById('aboutmeskills');
-   div.appendChild(text);
+//   div.appendChild(text);
    aboutmeskills.appendChild(text_tech);   
    const projectstitle = document.getElementById('projectstitle');
    projectstitle.innerHTML = courses.results[selection].projectstitle;
@@ -72,7 +72,7 @@ async function languageselection(selection) {
 async function mycourses() {
   deletecourses();
   const res = await fetch('https://raw.githubusercontent.com/Leyla-Carmona/Data_index_Portfolio/refs/heads/main/api_index/output.json');
-   const courses = await res.json();
+  const courses = await res.json();
   console.log(courses);
   let div1 = document.getElementById("certificados");
   const title = document.getElementById('certifiedtitle');
@@ -81,24 +81,24 @@ async function mycourses() {
    
     const course = document.createElement("a");
     const description = document.createElement('h4');
-    const category = document.createElement("div");
+    const color = document.createElement("div");
     const divcard = document.createElement("div");    
     const link = document.createElement("h4");
     const date = document.createElement("h4");
 
-    category.style.background = "linear-gradient(to right," + courses.category + ",black)";
-    course.innerHTML = courses.title + '<br> <a style="font-weight: 100; padding-right: 5;">'+ courses.description + '<br> <a style="font-weight: 100; font-style: italic;">'+ courses.updated_at.slice(0,22) + '</a></a>';
+    color.style.background = "linear-gradient(to right," + courses.color + ",black)";
+    course.innerHTML = courses.title + '<br> <a style="font-weight: 100; padding-right: 5;">'+ courses.description + '<br> <a style="font-weight: 100; font-style: italic;">'+ courses.update_at + '</a></a>';
     link.innerHTML = "<a href=" + courses.diploma_url + ">Certificado<a>";
     link.id = 'certificado';
-    date.innerText = courses.updated_at;
+    date.innerText = courses.update_at;
     course.className = "certifications";
     description.className = "certifications";
-    category.className = "imgcertifications";
+    color.className = "imgcertifications";
     link.className = "certifications";
     date.className = "certifications";
 
     divcard.id = "card";
-    divcard.appendChild(category);
+    divcard.appendChild(color);
     divcard.appendChild(course);  
     divcard.appendChild(description);
     divcard.appendChild(link);
@@ -120,24 +120,24 @@ async function mycourseseng() {
    
     const course = document.createElement("a");
     const description = document.createElement('h4');
-    const category = document.createElement("div");
+    const color = document.createElement("div");
     const divcard = document.createElement("div");    
     const link = document.createElement("h4");
     const date = document.createElement("h4");
 
-    category.style.background = "linear-gradient(to right," + courses.category + ",black)";
-    course.innerHTML = courses.title + '<br> <a style="font-weight: 100; padding-right: 5;">'+ courses.description + '<br> <a style="font-weight: 100; font-style: italic;">'+ courses.updated_at.slice(0,22) + '</a></a>';0
+    color.style.background = "linear-gradient(to right," + courses.color + ",black)";
+    course.innerHTML = courses.title + '<br> <a style="font-weight: 100; padding-right: 5;">'+ courses.description + '<br> <a style="font-weight: 100; font-style: italic;">'+ courses.update_at+ '</a></a>';0
     link.innerHTML = "<a href=" + courses.diploma_url + ">Certificate<a>";
     link.id = 'certificado';
-    date.innerText = courses.updated_at;
+    date.innerText = courses.update_at;
     course.className = "certifications";
     description.className = "certifications";
-    category.className = "imgcertifications";
+    color.className = "imgcertifications";
     link.className = "certifications";
     date.className = "certifications";
 
     divcard.id = "card";
-    divcard.appendChild(category);
+    divcard.appendChild(color);
     divcard.appendChild(course);  
     divcard.appendChild(description);
     divcard.appendChild(link);
