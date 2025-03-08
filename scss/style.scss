@@ -519,6 +519,9 @@ table{
 }
 }
 
+}
+
+
 .switch {
   position: relative;
   display: inline-block;
@@ -564,5 +567,4 @@ input:checked + .slider {
 
 input:checked + .slider:before {
   transform: translateX(30px);
-}
 }
