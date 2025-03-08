@@ -18,9 +18,9 @@ function selection() {
 
 async function languageselection(selection) {
   const res = await fetch(
-    //  'https://raw.githubusercontent.com/Leyla-Carmona/Data_index_Portfolio/refs/heads/main/api_index/index.json');
-    "https://raw.githubusercontent.com/Leyla-Carmona/Data_index_Portfolio/refs/heads/test_branch/api_index/index.json"
-  );
+      'https://raw.githubusercontent.com/Leyla-Carmona/Data_index_Portfolio/refs/heads/main/api_index/index.json'); // RAMA OFICIAL
+   // https://raw.githubusercontent.com/Leyla-Carmona/Data_index_Portfolio/refs/heads/test_branch/api_index/index.json); // RAMA DE PRUEBAS
+
   const courses = await res.json();
   console.log(courses.results[selection]);
 
@@ -236,10 +236,8 @@ async function mycourseseng() {
 async function proyects(selection) {
   let language;
   const res = await fetch(
-//    "https://raw.githubusercontent.com/Leyla-Carmona/Data_index_Portfolio/refs/heads/main/api_index/projectsenglish.json"
-//      "https://raw.githubusercontent.com/Leyla-Carmona/Data_index_Portfolio/refs/heads/test_branch/api_index/projects.json"
-      "https://raw.githubusercontent.com/Leyla-Carmona/Data_index_Portfolio/refs/heads/test_branch/api_index/projectsenglish.json"
-  );
+    "https://raw.githubusercontent.com/Leyla-Carmona/Data_index_Portfolio/refs/heads/main/api_index/projectsenglish.json"); //RAMA MAIN
+//      "https://raw.githubusercontent.com/Leyla-Carmona/Data_index_Portfolio/refs/heads/test_branch/api_index/projects.json"); //RAMA DE PRUEBAS
   const courses = await res.json();
   console.log(courses);
   if (selection == 1) {
