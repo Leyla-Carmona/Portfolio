@@ -173,4 +173,3 @@ courses[language].projects.forEach((project, index) => {
 async function deletecourses() {
   document.querySelectorAll("#card, .certifications, .imgcertifications, .certificado").forEach(el => el.remove());  
 };
-
