@@ -109,6 +109,7 @@ for (const category in textTech) {
 }
 text_tech.appendChild(div_tables);
 
+  
   const aboutmeskills = document.getElementById("aboutmeskills");
   aboutmeskills.appendChild(text_tech);
   const projectstitle = document.getElementById("projectstitle");

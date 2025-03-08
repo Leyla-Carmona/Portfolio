@@ -67,6 +67,7 @@ h1 {
 h2 {
   font-size: 3rem;
   font-family: "sahitya";
+  padding-top: 2%;
 }
 
 p {
@@ -86,9 +87,20 @@ header {
   padding-bottom: 135px;
   z-index: 0;
 }
+header nav {
+  position: fixed;
+  z-index: 6;
+  background-color: rgba(255, 255, 255, 0.149);
+  width: 100%;
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
+}
 header .main-nav {
+  margin-top: 3px;
   display: inline-block;
-  margin: 5px;
+  margin-right: 8px;
+  margin-left: 4px;
+  text-align: center;
 }
 header .main-nav a, header .main-nav select {
   font-family: "poppins";
@@ -108,6 +120,7 @@ select {
 .section1 .aboutme {
   width: 100%;
   height: auto;
+  padding-top: 104px;
 }
 
 .footer-aboutme {
@@ -139,13 +152,9 @@ select {
   margin: 5px;
   position: relative;
   text-align: left;
-}
-.section2 .projects .body-projects .projects-tab li {
-  margin-top: -15px;
-}
-.section2 .projects .body-projects .projects-tab ul {
-  margin: 10%;
-  padding-left: 25px;
+  margin-bottom: 150px ul;
+  margin-bottom-margin: 10%;
+  margin-bottom-padding-left: 25px;
 }
 .section2 .projects .body-projects .projects-tab figcaption {
   margin-left: 50%;
@@ -155,6 +164,7 @@ select {
   text-align: center;
   opacity: 0;
   transition: opacity 0.5s ease;
+  margin-top: -100px;
 }
 .section2 .projects .body-projects .projects-tab img {
   width: 100%;
@@ -204,6 +214,7 @@ select {
   p {
     padding: 15px 20px 0 15px;
     font-size: 1.5rem;
+    margin-bottom: 4%;
   }
   label {
     font-size: 1.5rem;
@@ -211,6 +222,7 @@ select {
   h1 {
     font-size: 3rem;
   }
+  
   ul {
     list-style-type: none;
   }
@@ -303,7 +315,6 @@ select {
     justify-content: flex-start;
     align-items: center;
     text-align: left;
-    margin-bottom: 5px;
   }
   .section1 {
     box-shadow: -2px 10px 9px 0 rgba(0, 0, 0, 0.747);
@@ -317,12 +328,14 @@ select {
 @media (min-width: 768px) {
   .body-aboutme p {
     font-size: 1.6rem;
+    margin-bottom: 0;
   }
   .header-aboutme {
     left: 55%;
     top: 8%;
   }
   .header-aboutme .profile-image {
+
     border-radius: 50%;
     border: solid 2px black;
     box-shadow: -2px 10px 9px 0 rgba(0, 0, 0, 0.747);
@@ -333,8 +346,13 @@ select {
     justify-content: space-between;
     align-items: center;
     text-align: left;
-    gap: 5px;
     margin-bottom: 5px;
+    padding-left: 25px;
+    padding-right: 40px;
+  }
+  .imgcertifications {
+    width: 70px;
+    height: 60px;
   }
   h4 {
     font-size: 22px;
@@ -401,8 +419,15 @@ select {
     width: auto;
     padding: 3%;
   }
-  .certifications {
-    padding-bottom: 2%;
+  #card {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    gap: 5px;
+    margin-bottom: 5px;
+    padding-right: 134px;
   }
   table {
     width: 221px;
@@ -411,6 +436,14 @@ select {
   #certificado {
     position: absolute;
     right: 0;
+    padding-right: 50px;
+  }
+  .certifications {
+    padding-right: 21px;
+  }
+  #function_0, #function_1, #function_2, #technologies_0, #technologies_1, #technologies_2 {
+    height: 360px;
+    padding: 9%;
   }
   .certifications {
     padding-right: 21px;
