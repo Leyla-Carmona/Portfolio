@@ -4,6 +4,15 @@ $shadow: -2px 10px 9px 0 rgba(0, 0, 0, 0.747);
 $btn-bg-hover: #4caf50;
 $padding-standard: 5px;
 
+//segunda paleta de colores
+$secondaryprimarycolor: #0c614a;
+$secondarysecondarycolor: black;
+
+.Tools{
+  img {
+   filter: drop-shadow(1px 1px 5px #D9D9D9);
+  }  
+}
 // Font Sizes
 $font-size: (
   "p": 1rem,
@@ -21,11 +30,61 @@ $font-family: (
   "h2": 'sahitya'
 );
 
+.lightmode{
+  nav{
+    background-color: rgba(255, 255, 255, 0.149);
+  }
+  header{   
+   background-color: $primarycolor;
+  }
+  a{    
+    color: black;
+  }  
+  .aboutme {
+    background-color: $secondarycolor;
+  }
+}
+.darkmode{
+  nav{
+    background-color: rgba(255, 255, 255, 0.149);    
+  }
+  header{
+    background-color: $secondaryprimarycolor;
+  }
+    
+  .aboutme{
+    background-color: $secondarysecondarycolor;
+  }
+
+  h1,h2, p, a, label{
+    color: white;
+    text-decoration: none;
+  }
+
+  body{
+    background-color: $secondaryprimarycolor;
+  }
+  .section2 .projects {
+    background-color: rgba(0, 0, 0, 0.542);
+  }
+
+  footer{
+    background-color: #000000ba;
+  }    
+}
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;  
   text-align: justify;
+}
+
+nav{
+  position: fixed;
+  z-index: 6;
+  width: 100%;
+  backdrop-filter: blur(1rem);
+//    filter: blur(1rem);
 }
 
 html {
@@ -54,12 +113,10 @@ a {
   position: relative;
   text-decoration: none;
   font-weight: bold;
-  color: black;
 //  padding-left: 10px;
 }
 
 header {
-  background-color: $primarycolor;
   width: 100%;
   padding-bottom: 135px;
   z-index: 0;
@@ -69,7 +126,7 @@ header {
     margin: 5px;
 
     a {
-      color: black;
+//      color: black;
       font-family: map-get($font-family, "nav");
       font-size: 1.5rem;
       font-style: italic;
@@ -87,7 +144,7 @@ select {
 .section1 {
   box-shadow: $shadow;
   .aboutme {
-    background-color: $secondarycolor;
+//    background-color: $secondarycolor;
     width: 100%;
     height: auto;
   }
@@ -96,7 +153,7 @@ select {
 .footer-aboutme {
   font-size: map-get($font-size, "sm");
   padding: 0 45px 20px 15px;
-  background-color: $secondarycolor;
+//  background-color: $secondarycolor;
   margin-bottom: $padding-standard;
 
   img {
@@ -161,7 +218,7 @@ select {
 .section3 .contact footer {
   justify-content: left;
   border: black solid 2px;
-  background-color: $secondarycolor;
+ // background-color: $secondarycolor;
 
   form {
     margin: $padding-standard;
@@ -233,11 +290,9 @@ select {
   #herramientasdiv{
     display: inline-flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
     h4{
       display: table-caption;
+      font-size: large;
     }
   }
 
@@ -250,16 +305,19 @@ select {
     text-align: center;
   }
 
+  
   .header-aboutme {
     position: absolute;
-    left: 42%;
-    top: 10%;
+    justify-self: anchor-center;
+    top: 82px;
+    
     .profile-image {
-      width: 180px;
+      width: 165px;
       border-radius: 50%;
       border: solid 2px black;
       box-shadow: $shadow;
     }
+  
   }
   
 #certificados{
@@ -296,18 +354,29 @@ h4{
   margin-bottom: 5px;
 }
 
+.section1 {
+  box-shadow: $shadow;
+  .aboutme {
+  //  background-color: $secondarycolor;
+    width: 100%;
+    height: auto;
+    padding-top: 104px;
+  }
+}
+
 
 }
 
 @media (min-width: 768px) {
   .body-aboutme p { font-size: map-get($font-size, "med"); }
-  .header-aboutme { left: 55%; top: 5%;
+  .header-aboutme { left: 55%; top: 8%;
     .profile-image {
-        width: 240px;
+      //  width: 160px;
         border-radius: 50%;
         border: solid 2px black;
         box-shadow: $shadow;
       }
+      
     }  
 
     #card{
@@ -325,14 +394,21 @@ h4{
       padding: 4%;
     }
     
-  .section1 .aboutme{
-    padding: 0;
-  }
+    .section1 {
+      box-shadow: $shadow;
+      .aboutme {
+  //      background-color: $secondarycolor;
+        width: 100%;
+        height: auto;
+        padding-top: 0;
+      }
+    }
+    
   
 table{
   border: 1px solid black;
-  width: 240px;
-  height: 580px;
+  width: 230px;
+  height: 490px;
   align-items: center;
   margin: 1px;
   padding: 1%;
@@ -371,15 +447,16 @@ table{
     font-size: map-get($font-size, "med"); 
   }
   .header-aboutme { 
-    left: 65%; top: 1%; 
+    left: 65%; top: 6%; 
     .profile-image {
-        width: 270px;
+ //       width: 160px;
         border-radius: 50%;
         border: solid 2px black;
         box-shadow: $shadow;
       }
     }
       
+    
     h4{
       font-size: map-get($font-size, 'med');
       padding: 1%;
@@ -394,7 +471,10 @@ table{
       padding-bottom: 2%;  
       }
 
-      
+    table{
+      width: 221px;
+      height: 475px;
+    }  
     #certificado{
       position: absolute;
        right: 0;
@@ -418,4 +498,51 @@ table{
   gap: 5px;
   margin-bottom: 5px;
 }
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: auto;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.slider:before {
+  content: "";
+  position: absolute;
+  height: 27px;
+  width: 27px;
+  border-radius: 50px;
+  left: 4px;
+  bottom: 0;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #000000;
+}
+
+input:checked + .slider:before {
+  transform: translateX(30px);
 }

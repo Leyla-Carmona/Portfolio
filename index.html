@@ -12,22 +12,26 @@
     <title>Leyla Carmona Portfolio</title>
 </head>
 <header>
-    <nav>     
+    <nav>
         <ul class="main-nav">
             <li class="main-nav"> | <a href="#section1" id="nav1"></a></li>
             <li class="main-nav"> | <a href="#section2" id="nav2"></a></li>
             <li class="main-nav"> | <a href="#section3" id="nav3"></a></li>
             <li class="main-nav"> | <a>
                     <Select onchange="selection()" id="languages">
-                        <option value="English" >English</option>
+                        <option value="English">English</option>
                         <option value="Spanish" selected> Español</option>
                     </select></a>
+                <label class="switch">
+                    <input type="checkbox" onclick="mode()" id="toggle">
+                    <span class="slider"></span>
+                </label>
             </li>
         </ul>
     </nav>
 </header>
 
-<body>
+<body class="lightmode">
     <section id="section1" class="section1">
         <div class="aboutme">
             <div class="header-aboutme">
@@ -51,10 +55,10 @@
 
                 <div class="footer-aboutme">
                     <a href="https://www.linkedin.com/in/leylacarmona/"> <img id="socialnetwork" src="img/linkedn.png"
-                            alt="linkdnlogo" > Linkedn</a>
-                    <a href="https://github.com/Leyla-Carmona"> <img id="socialnetwork" src="img/githublogo.png"
+                            alt="linkdnlogo"> Linkedn</a>
+                    <a href="https://github.com/Leyla-Carmona"> <img id="socialnetwork" src="img/tools/github.svg"
                             alt="githublogo"> GitHub</a>
-                    <a href="https://platzi.com/p/LeylaCarmona0812/"  id="platzilogo"></a>
+                    <a href="https://platzi.com/p/LeylaCarmona0812/" id="platzilogo"></a>
                 </div>
             </div>
     </section>
@@ -67,7 +71,7 @@
             <div class="body-projects">
                 <div class="projects-tab" id="react-store">
                     <figure class="projects-tab">
-                        <img src="img/reactstore.png" alt="React Store">
+                        <img src="img/reactstore.png" alt="React Store" class="proyect_presentation">
                         <figcaption>
                             <p class="projects-tab" id="description_0"></p>
                             <a class="projects-tab" href="https://leyla-carmona.github.io/onlinestore_react/"
@@ -78,7 +82,7 @@
                         </figcaption>
                         <h1 id="title_0"></h1>
                         <h2 id="subtechtitle_0"></h2>
-                        <p id="technologies_0" style="margin-left: 15%;"></p>
+                        <p id="technologies_0"></p>
                         <h2 id="subfunctitle_0"></h2>
                         <p id="function_0"></p>
                         <h2 id="subchallengesctitle_0"></h2>
@@ -87,7 +91,7 @@
                 </div>
                 <div class="projects-tab" id="pet-encyclopedia">
                     <figure class="projects-tab">
-                        <img src="img/proyect2.png" alt="Pet Encyclopedia">
+                        <img src="img/proyect2.png" alt="Pet Encyclopedia" class="proyect_presentation">
                         <figcaption>
                             <p class="projects-tab" id="description_1"></p>
                             <a class="projects-tab" href="https://leyla-carmona.github.io/Rest-Api-with-Javascript/"
@@ -107,11 +111,13 @@
                 </div>
                 <div class="projects-tab" id="cv-online">
                     <figure class="projects-tab">
-                        <img src="img/proyect1.png" alt="CV Online">
+                        <img src="img/proyect1.png" alt="CV Online" class="proyect_presentation">
                         <figcaption>
                             <p class="projects-tab" id="description_2"></p>
-                            <a class="projects-tab" href="https://leyla-carmona.github.io/Curriculum_Vitae/spanishindex.html"id="clickhere">→Link</a></a>
-                                <p id="description2_2"></p>
+                            <a class="projects-tab"
+                                href="https://leyla-carmona.github.io/Curriculum_Vitae/spanishindex.html"
+                                id="clickhere">→Link</a></a>
+                            <p id="description2_2"></p>
                             <a class="projects-tab"
                                 href="https://www.figma.com/design/buOPk7NLoAXHcQ8QTj8i1k/Untitled?node-id=0-1&t=nP84OMWdUtPyyBBn-1">→Link</a>
                         </figcaption>
@@ -137,8 +143,8 @@
                 <label for="name" id="inputname"></label>
                 <input type="text" id="name" name="name" required><br>
 
-                <label for="email"id="inputemail"></label>
-                <input type="email" id="email" name="email" required ><br>
+                <label for="email" id="inputemail"></label>
+                <input type="email" id="email" name="email" required><br>
 
                 <label for="subject" id="inputsubject"></label>
                 <input type="text" id="subject" name="subject" required><br>

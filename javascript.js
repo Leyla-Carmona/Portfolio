@@ -287,3 +287,18 @@ async function deletecourses() {
 async function deletetools(){  
 document.querySelectorAll(".Tools").forEach(el => el.remove());  
 }
+
+
+async function mode(){
+  //const mode = document.getElementById('mode');
+  let body = document.body.className;
+  if(body == "darkmode")
+  {
+  //    mode.innerText = 'Dark mode';
+      document.body.className ="lightmode";
+  } 
+  else{
+  //    mode.innerText = 'Light mode';
+      document.body.className ="darkmode";
+  }
+}

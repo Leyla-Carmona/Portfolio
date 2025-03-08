@@ -1,8 +1,56 @@
+.Tools img {
+  filter: drop-shadow(1px 1px 5px #D9D9D9);
+}
+
+.lightmode nav {
+  background-color: rgba(255, 255, 255, 0.149);
+}
+.lightmode header {
+  background-color: #BFB1B1;
+}
+.lightmode a, .lightmode select {
+  color: black;
+}
+.lightmode .aboutme {
+  background-color: #D9D9D9;
+}
+
+.darkmode nav {
+  background-color: rgba(255, 255, 255, 0.149);
+}
+.darkmode header {
+  background-color: #0c614a;
+}
+.darkmode .aboutme {
+  background-color: black;
+}
+.darkmode h1, .darkmode h2, .darkmode p, .darkmode a, .darkmode select, .darkmode label {
+  color: white;
+  text-decoration: none;
+}
+.darkmode body {
+  background-color: #0c614a;
+}
+.darkmode .section2 .projects {
+  background-color: rgba(0, 0, 0, 0.542);
+}
+.darkmode footer {
+  background-color: rgba(0, 0, 0, 0.7294117647);
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   text-align: justify;
+}
+
+nav {
+  position: fixed;
+  z-index: 6;
+  width: 100%;
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
 }
 
 html {
@@ -31,11 +79,9 @@ a, select {
   position: relative;
   text-decoration: none;
   font-weight: bold;
-  color: black;
 }
 
 header {
-  background-color: #BFB1B1;
   width: 100%;
   padding-bottom: 135px;
   z-index: 0;
@@ -45,7 +91,6 @@ header .main-nav {
   margin: 5px;
 }
 header .main-nav a, header .main-nav select {
-  color: black;
   font-family: "poppins";
   font-size: 1.5rem;
   font-style: italic;
@@ -61,7 +106,6 @@ select {
   box-shadow: -2px 10px 9px 0 rgba(0, 0, 0, 0.747);
 }
 .section1 .aboutme {
-  background-color: #D9D9D9;
   width: 100%;
   height: auto;
 }
@@ -69,7 +113,6 @@ select {
 .footer-aboutme {
   font-size: 1.3rem;
   padding: 0 45px 20px 15px;
-  background-color: #D9D9D9;
   margin-bottom: 5px;
 }
 .footer-aboutme img {
@@ -132,7 +175,6 @@ select {
 .section3 .contact footer {
   justify-content: left;
   border: black solid 2px;
-  background-color: #D9D9D9;
 }
 .section3 .contact footer form {
   margin: 5px;
@@ -212,12 +254,10 @@ select {
   #herramientasdiv {
     display: inline-flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
   }
   #herramientasdiv h4 {
     display: table-caption;
+    font-size: large;
   }
   th {
     width: 100%;
@@ -228,11 +268,11 @@ select {
   }
   .header-aboutme {
     position: absolute;
-    left: 42%;
-    top: 10%;
+    justify-self: anchor-center;
+    top: 82px;
   }
   .header-aboutme .profile-image {
-    width: 180px;
+    width: 165px;
     border-radius: 50%;
     border: solid 2px black;
     box-shadow: -2px 10px 9px 0 rgba(0, 0, 0, 0.747);
@@ -265,6 +305,14 @@ select {
     text-align: left;
     margin-bottom: 5px;
   }
+  .section1 {
+    box-shadow: -2px 10px 9px 0 rgba(0, 0, 0, 0.747);
+  }
+  .section1 .aboutme {
+    width: 100%;
+    height: auto;
+    padding-top: 104px;
+  }
 }
 @media (min-width: 768px) {
   .body-aboutme p {
@@ -272,10 +320,9 @@ select {
   }
   .header-aboutme {
     left: 55%;
-    top: 5%;
+    top: 8%;
   }
   .header-aboutme .profile-image {
-    width: 240px;
     border-radius: 50%;
     border: solid 2px black;
     box-shadow: -2px 10px 9px 0 rgba(0, 0, 0, 0.747);
@@ -293,13 +340,18 @@ select {
     font-size: 22px;
     padding: 4%;
   }
+  .section1 {
+    box-shadow: -2px 10px 9px 0 rgba(0, 0, 0, 0.747);
+  }
   .section1 .aboutme {
-    padding: 0;
+    width: 100%;
+    height: auto;
+    padding-top: 0;
   }
   table {
     border: 1px solid black;
-    width: 240px;
-    height: 580px;
+    width: 230px;
+    height: 490px;
     align-items: center;
     margin: 1px;
     padding: 1%;
@@ -334,10 +386,9 @@ select {
   }
   .header-aboutme {
     left: 65%;
-    top: 1%;
+    top: 6%;
   }
   .header-aboutme .profile-image {
-    width: 270px;
     border-radius: 50%;
     border: solid 2px black;
     box-shadow: -2px 10px 9px 0 rgba(0, 0, 0, 0.747);
@@ -352,6 +403,10 @@ select {
   }
   .certifications {
     padding-bottom: 2%;
+  }
+  table {
+    width: 221px;
+    height: 475px;
   }
   #certificado {
     position: absolute;
@@ -373,4 +428,50 @@ select {
     gap: 5px;
     margin-bottom: 5px;
   }
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: auto;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.slider:before {
+  content: "";
+  position: absolute;
+  height: 27px;
+  width: 27px;
+  border-radius: 50px;
+  left: 4px;
+  bottom: 0;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #000000;
+}
+
+input:checked + .slider:before {
+  transform: translateX(30px);
 }/*# sourceMappingURL=style.css.map */
