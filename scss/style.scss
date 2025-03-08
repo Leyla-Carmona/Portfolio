@@ -147,7 +147,7 @@ select {
         }
 
         &:hover {
-          img {
+        .proyect_presentation{
             transform: scale(1.1);
             filter: opacity(0.5) blur(5px);
           }
@@ -187,6 +187,69 @@ select {
   p { padding: 15px 20px 0 15px; font-size: 1.5rem;}
   label {font-size: 1.5rem;}
   h1 { font-size: map-get($font-size, "lg"); }
+  ul{ 
+    list-style-type: none;
+  }
+ #technologies_0, #technologies_1, #technologies_2{
+  height: 130px;
+  
+  img{
+    width: 30px;
+    height: 30px;
+    border: none;
+    margin: 4%;
+    object-fit: fill;
+  }
+ }
+  #skillstext{
+    ul,li,strong{
+      list-style-type: none;
+    }
+    img{
+      width: 45px;
+    }
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  table{
+    border: 1px solid black;
+    width: 240px;
+    align-items: center;
+    margin: 1px;
+    padding: 1%;
+    margin-left: 13px;
+  } 
+  td, tr{
+   // border: 1px solid black;
+    width: 50px;
+  } 
+
+  #aboutmeskills{
+    display: grid;
+    justify-items: stretch;
+  }
+  #herramientasdiv{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    h4{
+      display: table-caption;
+    }
+  }
+
+  th{
+    width: 100%;    
+    text-align: center;
+  }
+
+  td{
+    text-align: center;
+  }
+
   .header-aboutme {
     position: absolute;
     left: 42%;
@@ -215,7 +278,8 @@ select {
   margin-left: 2%;
   margin-right: 2%;
   border: solid black 2px;
-  padding: 7%;
+  width: 50px;
+  height: 30px;
   align-self: center;
 }
 h4{
@@ -260,6 +324,29 @@ h4{
       font-size: 22px;
       padding: 4%;
     }
+    
+  .section1 .aboutme{
+    padding: 0;
+  }
+  
+table{
+  border: 1px solid black;
+  width: 240px;
+  height: 580px;
+  align-items: center;
+  margin: 1px;
+  padding: 1%;
+  margin-left: 13px;
+} 
+}
+
+.imgcertifications{ 
+  border-radius: 300px;
+  margin-left: 2%;
+  margin-right: 2%;
+  border: solid black 2px;
+  padding: 3%;
+  align-self: center;
 }
 
 #certificados{
@@ -313,7 +400,14 @@ h4{
        right: 0;
     }
 
-    
+    .certifications{      
+      padding-right: 21px;
+    }
+
+    #function_0, #function_1, #function_2{
+  height: 360px;
+  padding: 9%;
+}
 
 #card{
   display: flex;
