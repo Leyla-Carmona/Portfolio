@@ -104,4 +104,7 @@ Versión 4 subida:
 
 ![image](https://github.com/user-attachments/assets/f854c8ae-4c3c-412b-8e6a-0af3033a224c)
 
-
+Mejoras pendientes: 
+-> Agregar un select para filtrar los cursos por categoria
+-> Animaciones de carga 
+-> Animaciones de entrada a elementos
