@@ -87,9 +87,21 @@ Captura de Pantalla al momento de estar en el proceso:
 Versión 3 subida:
 Cambios importantes: 
 -> Ajuste de margenes y ubiación de titulos y letras para una mejor visualización
--> HTML Dinamico cargado con un json en un repositorio para evitar las rutas "quemadas" en el HTML dejando solo un par de textos en el mismo y el resto de manera dinámica
+-> HTML Dinamico cargado con un json en un repositorio para evitar las rutas "quemadas" en el AHTML dejando solo un par de textos en el mismo y el resto de manera dinámica
 -> Mejorado a SPA.
 
 Versión 3 ----------------------------------- Versión anterior
 ![image](https://github.com/user-attachments/assets/d67fe04e-580b-487f-bd61-fc2c74b40ca0)
+
+
+9/3/2025
+Versión 4 subida:
+-> Dark mode agregado
+-> Reorganizadas las habilidades y en tablas con imagenes y logos con el fin de mostrar de mejorar la experiencia y el diseño.
+-> Mejorado el diseño de las div redondeados.
+-> Agregado el 4to proyecto hablanedo sobre este portafolio y otras.
+-> Arreglado margenes e index
+
+![image](https://github.com/user-attachments/assets/f854c8ae-4c3c-412b-8e6a-0af3033a224c)
+
 
