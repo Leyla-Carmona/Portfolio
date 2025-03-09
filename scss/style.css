@@ -231,10 +231,10 @@ select {
   ul {
     list-style-type: none;
   }
-  #technologies_0, #technologies_1, #technologies_2 {
+  #technologies_0, #technologies_1, #technologies_2, #technologies_3 {
     height: 130px;
   }
-  #technologies_0 img, #technologies_1 img, #technologies_2 img {
+  #technologies_0 img, #technologies_1 img, #technologies_2 img, #technologies_3 img {
     width: 30px;
     height: 30px;
     border: none;
@@ -369,6 +369,9 @@ select {
     height: auto;
     padding-top: 0;
   }
+  .nametitleproyect, .technologiesproyect {
+    height: 100px;
+  }
   table {
     border: 1px solid black;
     width: 230px;
@@ -396,6 +399,10 @@ select {
   }
   .certifications #card {
     justify-content: space-between;
+  }
+  .functionproyect {
+    height: 450px;
+    padding: 9%;
   }
 }
 @media (min-width: 768px) and (min-width: 1024px) {
@@ -434,8 +441,8 @@ select {
   .certifications {
     padding-right: 21px;
   }
-  #function_0, #function_1, #function_2 {
-    height: 360px;
+  .functionproyect {
+    height: 450px;
     padding: 9%;
   }
   #card {

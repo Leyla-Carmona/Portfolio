@@ -274,7 +274,7 @@ async function proyects(selection) {
       "description2",
       "subfunctitle",
       "function",
-      "subchallengesctitle",
+      "subchallengestitle",
       "challenges"
     ].forEach((key) => {
       const element = document.getElementById(`${key}_${index}`);

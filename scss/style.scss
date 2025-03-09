@@ -268,7 +268,7 @@ select {
   ul{ 
     list-style-type: none;
   }
- #technologies_0, #technologies_1, #technologies_2{
+ #technologies_0, #technologies_1, #technologies_2, #technologies_3{
   height: 130px;
   
   img{
@@ -431,7 +431,10 @@ h4{
       }
     }
     
-  
+    .nametitleproyect, .technologiesproyect{
+      height: 100px;
+    }
+
 table{
   border: 1px solid black;
   width: 230px;
@@ -465,9 +468,16 @@ table{
   #card{
     justify-content: space-between;
   }
+
 }
 
 
+  
+.functionproyect{
+  height: 450px;
+  padding: 9%;}
+  
+  
 @media (min-width: 1024px) {
   .body-aboutme p { 
     font-size: map-get($font-size, "med"); 
@@ -510,8 +520,8 @@ table{
       padding-right: 21px;
     }
 
-    #function_0, #function_1, #function_2{
-  height: 360px;
+    .functionproyect{
+  height: 450px;
   padding: 9%;
 }
 
