@@ -107,10 +107,11 @@ Dark mode
 ![image](https://github.com/user-attachments/assets/ed4a1f82-d52e-4e2f-be55-8ed80b0d6ac1)
 
 Sección de Cursos:
-Light Mode
+Light Mode <br>
 ![image](https://github.com/user-attachments/assets/d01f3bf1-0fdd-4af3-aba4-315e6e02d4b6)
-Dark mode
-![image](https://github.com/user-attachments/assets/f854c8ae-4c3c-412b-8e6a-0af3033a224c)
+Dark mode <br>
+![image](https://github.com/user-attachments/assets/067f8a8b-760e-4de1-bca2-505406b514bd)
+
 
 
 Mejoras pendientes: 
