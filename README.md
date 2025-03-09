@@ -74,7 +74,7 @@ Mobile:
 <br> ![image](https://github.com/user-attachments/assets/1a3e18ae-93e6-4334-ba2d-ad59c4f96f5b)
 
 
-#VERSION 3(En progreso)
+#VERSION 3
 Con el fin de aplicar conocimientos en javascript y dominio del DOM he tomado la decisión de mudar completamente el sitio web a tipo DOM, este proceso se ha iniciando con certificados que fue mi sujeto de pruebas, la idea es hacer un SPA que traiga la información del idioma tanto en español como inglés, eliminando el index adicional, siempre buscando optimizar en espacio, tiempos de carga y rendimiento, y claro como es de esperar la información dentro del portafolio la cual recibirá un pequeño ajuste para ir agregando nuevas habilidades y estrategias
 
 Captura de Pantalla al momento de estar en el proceso:
@@ -101,8 +101,17 @@ Versión 4 subida:
 -> Mejorado el diseño de las div redondeados.
 -> Agregado el 4to proyecto hablanedo sobre este portafolio y otras.
 -> Arreglado margenes e index
-
+Light Mode
 ![image](https://github.com/user-attachments/assets/f854c8ae-4c3c-412b-8e6a-0af3033a224c)
+Dark mode
+![image](https://github.com/user-attachments/assets/ed4a1f82-d52e-4e2f-be55-8ed80b0d6ac1)
+
+Sección de Cursos:
+Light Mode
+![image](https://github.com/user-attachments/assets/d01f3bf1-0fdd-4af3-aba4-315e6e02d4b6)
+Dark mode
+![image](https://github.com/user-attachments/assets/f854c8ae-4c3c-412b-8e6a-0af3033a224c)
+
 
 Mejoras pendientes: 
 -> Agregar un select para filtrar los cursos por categoria
