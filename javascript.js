@@ -153,13 +153,22 @@ async function mycourses() {
   courses.slice(0, 7).forEach((courses) => {
     const course = document.createElement("a");
     const description = document.createElement("h4");
-    const color = document.createElement("div");
+    const color = document.createElement("div");    
+    color.id = 'presentation';
     const divcard = document.createElement("div");
     const link = document.createElement("h4");
     const date = document.createElement("h4");
 
-    color.style.background =
-      "linear-gradient(to right," + courses.color + ",black)";
+    if(document.body.className == "darkmode")
+      {
+        color.style.background =
+          "linear-gradient(to right," + courses.color + ", black)";    
+      } 
+      else{
+        color.style.background =
+          "linear-gradient(to right," + courses.color + ",#D9D9D9)";
+      }
+      
     course.innerHTML =
       courses.title +
       '<br> <a style="font-weight: 100; padding-right: 5;">' +
@@ -201,12 +210,21 @@ async function mycourseseng() {
     const course = document.createElement("a");
     const description = document.createElement("h4");
     const color = document.createElement("div");
+    color.id = 'presentation';
     const divcard = document.createElement("div");
     const link = document.createElement("h4");
     const date = document.createElement("h4");
 
-    color.style.background =
-      "linear-gradient(to right," + courses.color + ",black)";
+    if(document.body.className == "darkmode")
+      {
+        color.style.background =
+          "linear-gradient(to right," + courses.color + ",black)";    
+      } 
+      else{
+        color.style.background =
+          "linear-gradient(to right," + courses.color + ",#D9D9D9)";
+      }
+       
     course.innerHTML =
       courses.title +
       '<br> <a style="font-weight: 100; padding-right: 5;">' +
@@ -287,17 +305,17 @@ async function deletetools(){
 document.querySelectorAll(".Tools").forEach(el => el.remove());  
 }
 
-
 async function mode(){
-  //const mode = document.getElementById('mode');
-  let body = document.body.className;
+  let body = document.body.className;  
   if(body == "darkmode")
   {
-  //    mode.innerText = 'Dark mode';
       document.body.className ="lightmode";
+      deletecourses();
+      selection();
   } 
   else{
-  //    mode.innerText = 'Light mode';
       document.body.className ="darkmode";
+      deletecourses();
+      selection();
   }
 }

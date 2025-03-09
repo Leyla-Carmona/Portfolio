@@ -2,6 +2,9 @@
   filter: drop-shadow(1px 1px 5px #D9D9D9);
 }
 
+.lightmode #presentation {
+  border: none;
+}
 .lightmode nav {
   background-color: rgba(255, 255, 255, 0.149);
 }
@@ -15,6 +18,9 @@
   background-color: #D9D9D9;
 }
 
+.darkmode #presentation {
+  border: black 2px solid;
+}
 .darkmode nav {
   background-color: rgba(255, 255, 255, 0.149);
 }

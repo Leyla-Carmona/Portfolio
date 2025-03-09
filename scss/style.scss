@@ -31,6 +31,9 @@ $font-family: (
 );
 
 .lightmode{
+  #presentation{
+    border: none
+  }
   nav{
     background-color: rgba(255, 255, 255, 0.149);
   }
@@ -45,6 +48,10 @@ $font-family: (
   }
 }
 .darkmode{
+  #presentation{
+    border: black 2px solid;
+  }
+  
   nav{
     background-color: rgba(255, 255, 255, 0.149);    
   }
